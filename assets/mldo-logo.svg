@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><linearGradient id="bg-i" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#0e1420"/><stop offset="1" stop-color="#16213a"/></linearGradient></defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg-i)"/>
+  
+  <defs>
+    <clipPath id="sky-i"><rect x="15" y="14" width="34" height="19.5"/></clipPath>
+    <linearGradient id="sun-i" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0a35c"/><stop offset="1" stop-color="#c06818"/></linearGradient>
+  </defs>
+  <rect x="15" y="14" width="34" height="40" rx="5" fill="#f4f2ed"/>
+  <circle cx="32" cy="33.5" r="10" fill="url(#sun-i)" clip-path="url(#sky-i)"/>
+  <rect x="19" y="32" width="26" height="3.2" rx="1.6" fill="#1a2230"/>
+  <rect x="19" y="39.5" width="19" height="3" rx="1.5" fill="#1a2230" opacity=".45"/>
+  <rect x="19" y="45.5" width="12" height="3" rx="1.5" fill="#1a2230" opacity=".45"/>
+  <rect x="20.5" y="9" width="3" height="9" rx="1.5" fill="#e0a35c"/><rect x="27.5" y="9" width="3" height="9" rx="1.5" fill="#e0a35c"/><rect x="34.5" y="9" width="3" height="9" rx="1.5" fill="#e0a35c"/><rect x="41.5" y="9" width="3" height="9" rx="1.5" fill="#e0a35c"/>
+</svg>

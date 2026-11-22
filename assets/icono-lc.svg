@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- cinta métrica: la cinta amarilla sale por abajo a la derecha -->
+  <path d="M30 41h29v13H30z" fill="#F2C14E" stroke="#1B2A47" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M38 41v5M44 41v7.5M50 41v5" stroke="#1B2A47" stroke-width="2" stroke-linecap="round"/>
+  <path d="M59 38.5v18" stroke="#1B2A47" stroke-width="4" stroke-linecap="round"/>
+  <!-- carcasa -->
+  <rect x="3" y="5" width="42" height="49" rx="12" fill="#1B2A47"/>
+  <circle cx="24" cy="29.5" r="16.5" fill="none" stroke="#F2C14E" stroke-width="2.6"/>
+  <path d="M10 52h28" stroke="#F2C14E" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <!-- L y C trazadas (no dependen de fuentes) -->
+  <path d="M15.5 21.5v16h7.5" fill="none" stroke="#F2C14E" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 23.2a6.6 6.6 0 1 0 0 12.6" fill="none" stroke="#F2C14E" stroke-width="4.2" stroke-linecap="round"/>
+</svg>

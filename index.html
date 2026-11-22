@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonel Castillo · Ingeniero Civil | Diseño, cálculo, presupuestos y construcción de obras</title>
+<meta name="description" content="Ingeniero civil en Barcelona, Anzoátegui (Venezuela): diseño y cálculo estructural, planos, cómputos métricos, presupuestos y APU, dirección y supervisión de obra. CIV 318718.">
+<meta name="author" content="Leonel Castillo">
+<meta name="theme-color" content="#F4EFE4">
+<!-- REEMPLAZAR: cuando tengas dominio, descomenta y pon la URL real -->
+<!-- <link rel="canonical" href="https://TU-DOMINIO/"> -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_VE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Leonel Castillo · Ingeniero Civil — Del plano a la obra">
+<meta property="og:description" content="Diseño, cálculo, presupuestos y supervisión de obra. Barcelona, Anzoátegui (Venezuela).">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Leonel Castillo · Ingeniero Civil — Del plano a la obra">
+<meta name="twitter:description" content="Diseño, cálculo, presupuestos y supervisión de obra en Venezuela.">
+<meta name="twitter:image" content="assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/icono-lc.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Leonel Castillo",
+  "jobTitle": "Ingeniero Civil",
+  "alumniOf": "Instituto Universitario Politécnico Santiago Mariño",
+  "hasCredential": {"@type": "EducationalOccupationalCredential", "name": "Colegio de Ingenieros de Venezuela N.º 318718"},
+  "knowsLanguage": ["es", "en"],
+  "knowsAbout": ["Cálculo estructural", "Supervisión de obra", "Presupuestos de obra", "Análisis de precios unitarios", "Diseño de obras civiles"],
+  "address": {"@type": "PostalAddress", "addressLocality": "Barcelona", "addressRegion": "Anzoátegui", "addressCountry": "VE"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script>
+  (function(){
+    var rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.documentElement.classList.add(rm ? 'rm' : 'motion');
+  })();
+</script>
+<style>
+:root{
+  --papel:#F4EFE4; --papel-2:#EBE4D3; --hoja:#FBF8F1;
+  --tinta:#1B2A47; --tinta-2:rgba(27,42,71,.62); --tinta-3:rgba(27,42,71,.18);
+  --azul:#0B2545; --gris:#8D99AE; --amarillo:#F2C14E; --agua:#2F6FD6; --elec:#C8372D;
+  --mano:"Architects Daughter", "Comic Neue", "Segoe Print", cursive;
+  --sans:"Archivo", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter:clamp(16px, 4vw, 56px);
+  --bc:255px 14px 225px 14px / 14px 225px 14px 255px;
+  --bc2:12px 220px 16px 240px / 240px 14px 220px 12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+html.rm{scroll-behavior:auto}
+body{margin:0;color:var(--tinta);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;
+  background-color:var(--papel);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .27 0 0 0 0 .2 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(rgba(47,111,214,.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47,111,214,.075) 1px, transparent 1px);
+  background-size:220px 220px, 24px 24px, 24px 24px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--amarillo);color:var(--tinta);padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
+:focus-visible{outline:2px dashed var(--elec);outline-offset:4px}
+.ph{font-family:var(--mano);font-size:.9em;background:rgba(242,193,78,.55);border:1.5px dashed var(--tinta);padding:0 .35em;border-radius:var(--bc);white-space:nowrap}
+.resalta{background:linear-gradient(104deg,rgba(242,193,78,0) .9%,rgba(242,193,78,.9) 2.4%,rgba(242,193,78,.65) 5.8%,rgba(242,193,78,.4) 93%,rgba(242,193,78,.75) 96%,rgba(242,193,78,0) 98%);padding:0 .25em;border-radius:.4em .8em .5em .9em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+/* barra superior */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;gap:16px;padding:10px var(--gutter);background:rgba(244,239,228,.93);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.top::after{content:"";position:absolute;left:var(--gutter);right:var(--gutter);bottom:0;height:6px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 6' preserveAspectRatio='none'%3E%3Cpath d='M1 3C80 1 160 5 240 3s180-2 260 0 70 1 98-1' stroke='%231B2A47' stroke-width='1.4' fill='none' opacity='.7'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800}
+.marca-ico{width:38px;height:38px;transform:rotate(-4deg);flex:none}
+.marca-sello{display:grid;place-items:center;width:38px;height:38px;border:2px solid var(--tinta);border-radius:50% 45% 52% 48% / 48% 52% 46% 54%;font-family:var(--mano);font-size:15px;transform:rotate(-6deg)}
+.top nav{margin-left:auto;display:flex;gap:22px}
+.top nav a{font-family:var(--mano);font-size:16px;text-decoration:none}
+.top nav a:hover{text-decoration:underline wavy var(--amarillo) 2px;text-underline-offset:5px}
+.ctrl{font-family:var(--mano);font-size:15px;background:transparent;color:var(--tinta);border:1.8px solid var(--tinta);border-radius:var(--bc);padding:4px 11px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.ctrl:hover{background:rgba(242,193,78,.5)}
+.ctrl[aria-pressed="true"]{background:var(--amarillo)}
+.ctrl svg{width:18px;height:18px}
+.ctrles{display:flex;gap:8px}
+.barra-movil{position:fixed;top:0;left:0;height:4px;width:100%;background:var(--amarillo);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+@media (max-width:899px){.top nav{display:none}.ctrles{margin-left:auto}.ctrl .txt{display:none}}
+@media (min-width:900px){.barra-movil{display:none}}
+
+/* botones */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;font-family:var(--mano);font-size:19px;text-decoration:none;padding:12px 22px;border:2.2px solid var(--tinta);border-radius:var(--bc);cursor:pointer;color:var(--tinta);background:transparent;transition:transform .15s}
+.btn-1{background:var(--amarillo);box-shadow:3px 4px 0 var(--tinta)}
+.btn:hover{transform:translate(-1px,-2px) rotate(-.6deg)}
+.btn-1:hover{box-shadow:5px 6px 0 var(--tinta)}
+.btn-2{border-radius:var(--bc2)}
+.btn-2:hover{background:rgba(242,193,78,.35)}
+.btn[aria-disabled="true"]{opacity:.5;cursor:not-allowed}
+
+/* grúa */
+.grua{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:40;width:78px;height:min(62vh,440px)}
+.grua svg{width:100%;height:100%;overflow:visible}
+.grua .niv{font-family:var(--mano);font-size:12px;fill:var(--tinta);opacity:.5;cursor:pointer}
+.grua .niv.act{opacity:1;fill:var(--elec)}
+@media (max-width:1099px){.grua{display:none}}
+
+/* comunes */
+main{position:relative}
+section{position:relative}
+.wrap{padding:0 var(--gutter);max-width:1320px;margin:0 auto}
+@media (min-width:1100px){.wrap{padding-right:124px}}
+.lamina{display:inline-flex;align-items:center;gap:10px;font-family:var(--mano);font-size:17px;color:var(--tinta-2)}
+.lamina b{display:inline-grid;place-items:center;width:34px;height:34px;border:1.8px solid var(--tinta);border-radius:50% 46% 54% 48%/52% 48% 50% 46%;color:var(--tinta);font-weight:400}
+.tit{position:relative;display:block;width:fit-content;max-width:100%;margin:30px 0 .25em}
+.tit h2{font-family:var(--mano);font-weight:400;font-size:clamp(34px,5vw,60px);line-height:1.08;margin:0}
+.cota{position:absolute;left:0;right:0;top:-18px;height:12px;border-left:1.5px solid currentColor;border-right:1.5px solid currentColor;opacity:.55;pointer-events:none}
+.cota::before{content:"";position:absolute;left:-4px;right:-4px;top:50%;border-top:1.4px solid currentColor;transform:rotate(-.4deg)}
+.cota span{position:absolute;left:50%;top:-9px;transform:translateX(-50%);background:var(--papel);padding:0 6px;font-family:var(--mano);font-size:13px;line-height:1}
+.lead{font-size:clamp(16px,1.6vw,19px);max-width:62ch}
+.hoja{position:relative;background:var(--hoja);border:1.6px solid var(--tinta-3);box-shadow:0 1px 0 rgba(0,0,0,.04),0 12px 30px -18px rgba(27,42,71,.45)}
+.cinta::before,.cinta::after{content:"";position:absolute;width:86px;height:24px;background:rgba(229,214,170,.78);box-shadow:0 1px 2px rgba(0,0,0,.08);z-index:3}
+.cinta::before{top:-11px;left:22px;transform:rotate(-5deg)}
+.cinta::after{top:-11px;right:22px;transform:rotate(4deg)}
+
+/* Lámina 01 · Inicio */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:96px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:40px;align-items:center;width:100%}
+.hero h1{font-size:clamp(42px,6.2vw,84px);line-height:.98;margin:.25em 0 .1em;font-weight:800;letter-spacing:-.02em}
+.hero h1 .rol{display:block;font-family:var(--mano);font-weight:400;font-size:.56em;letter-spacing:0;margin-top:.2em}
+.hero .sub{font-size:clamp(19px,2vw,24px);margin:.4em 0 6px;font-weight:500}
+.hero .zona{font-family:var(--mano);font-size:16px;color:var(--tinta-2);margin:0 0 16px}
+.cta{display:flex;flex-wrap:wrap;gap:16px}
+.bajar{margin-top:44px;font-family:var(--mano);font-size:16px;color:var(--tinta-2);display:flex;align-items:center;gap:10px}
+.bajar svg{width:26px;height:40px}
+.motion .bajar svg{animation:flota 1.8s ease-in-out infinite}
+@keyframes flota{50%{transform:translateY(6px)}}
+.hero-hoja{padding:18px 18px 10px;transform:rotate(.8deg)}
+.hero-hoja svg{width:100%;height:auto;display:block}
+.cajetin{display:grid;grid-template-columns:1.4fr 1fr 1fr;border:1.8px solid var(--tinta);border-radius:3px 6px 4px 7px;font-family:var(--mano);font-size:14px;margin-top:8px}
+.cajetin div{padding:5px 9px;border-right:1.2px solid var(--tinta-3);border-top:1.2px solid var(--tinta-3)}
+.cajetin div:nth-child(-n+3){border-top:0}
+.cajetin div:nth-child(3n){border-right:0}
+.cajetin small{display:block;font-size:11px;color:var(--tinta-2);text-transform:uppercase;letter-spacing:.06em}
+.motion .hp path{stroke-dasharray:1 1;stroke-dashoffset:1;animation:trazo 1.3s cubic-bezier(.55,.1,.3,1) forwards;animation-delay:calc(var(--d,0) * 1s)}
+.motion .hp path.solido,.motion .hp text{stroke-dasharray:none;opacity:0;animation:aparece .5s forwards;animation-delay:calc(var(--d,0) * 1s + .4s)}
+@keyframes trazo{to{stroke-dashoffset:0}}
+@keyframes aparece{to{opacity:1}}
+@media (max-width:899px){
+  .hero{padding-top:88px;align-items:flex-start}
+  .hero .wrap{grid-template-columns:1fr;gap:28px}
+  .cajetin{font-size:13px}
+}
+
+/* Lámina 02 · Servicios */
+.serv .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px}
+.serv-col{grid-column:1}
+.serv-intro{padding:16vh 0 6vh}
+.leyenda{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.etq{font-family:var(--mano);font-style:normal;font-size:14px;padding:2px 10px;border:1.6px solid currentColor;border-radius:var(--bc);white-space:nowrap}
+.etq.dis{color:var(--agua)} .etq.obr{color:var(--elec)} .etq.amb{color:#3f7d3a}
+.fase{min-height:92vh;display:flex;align-items:center;padding:6vh 0}
+.tarjeta{position:relative;max-width:500px;padding:26px 26px 22px;background:var(--hoja);border:2px solid var(--tinta);border-radius:var(--bc);box-shadow:4px 5px 0 var(--tinta-3)}
+.fase:nth-of-type(even) .tarjeta{border-radius:var(--bc2);transform:rotate(-.6deg)}
+.fase:nth-of-type(odd) .tarjeta{transform:rotate(.4deg)}
+.fase-n{font-family:var(--mano);font-size:16px;color:var(--tinta-2);display:flex;justify-content:space-between;gap:10px;align-items:center}
+.tarjeta h3{font-size:clamp(22px,2.3vw,28px);margin:.4em 0 .15em;line-height:1.15;display:flex;gap:14px;align-items:flex-start}
+.tarjeta h3 svg{flex:none;width:42px;height:42px;margin-top:1px}
+.tarjeta .serv{font-family:var(--mano);font-size:16px;margin:0 0 .7em}
+.tarjeta p{margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px 12px;margin:0;padding:0;list-style:none}
+.chips li{font-family:var(--mano);font-size:15px}
+.chips li::before{content:"✓ ";color:var(--elec)}
+.lamina-fija{grid-column:2;grid-row:1 / span 6;position:sticky;top:11vh;height:78vh;align-self:start;margin:12vh 0 0}
+.lamina-fija .hoja{height:100%;display:flex;flex-direction:column;padding:16px 16px 8px;transform:rotate(-.5deg)}
+.lamina-fija svg{flex:1;width:100%;min-height:0;display:block}
+.cap{font-family:var(--mano);font-size:17px;padding:6px 4px 2px;border-top:1.4px dashed var(--tinta-3);display:flex;justify-content:space-between;gap:10px}
+.cap b{font-weight:400;color:var(--elec)}
+.it path{stroke-dasharray:1 1;stroke-dashoffset:var(--o,1)}
+.it .solido{stroke-dasharray:none;opacity:var(--v,0)}
+.it text{opacity:var(--v,0)}
+.lav{mix-blend-mode:multiply}
+.lav .solido{opacity:calc(var(--v,0) * .9)!important}
+.nota{font-family:var(--mano);fill:var(--tinta)}
+@media (max-width:899px){
+  .serv .wrap{display:block}
+  .lamina-fija{position:sticky;top:58px;height:42vh;margin:0 calc(-1 * var(--gutter));z-index:5}
+  .lamina-fija .hoja{transform:none;border-left:0;border-right:0;padding:8px 10px 4px}
+  .cinta-m::before,.cinta-m::after{display:none}
+  .serv-intro{padding:40px 0 20px}
+  .fase{min-height:70vh;align-items:flex-start;padding:4vh 0}
+  .tarjeta{transform:none!important}
+}
+.rm .lamina-fija{display:none}
+.rm .serv .wrap{display:block}
+.rm .fase{min-height:0;padding:16px 0}
+
+/* Lámina 03 · Obras */
+.obras-cab{padding:12vh 0 6vh}
+.obras-cab .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px;align-items:center}
+.final .hoja{padding:14px;transform:rotate(.7deg)}
+.final svg{width:100%;height:auto;display:block}
+.final{margin:0}
+@media (max-width:899px){.obras-cab .wrap{grid-template-columns:1fr}}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:34px 28px;margin:40px 0 20px}
+.obra{position:relative;background:var(--hoja);padding:12px 12px 16px;border:1.4px solid var(--tinta-3);box-shadow:0 14px 26px -18px rgba(27,42,71,.55)}
+.obra:nth-child(3n+1){transform:rotate(-1.2deg)} .obra:nth-child(3n+2){transform:rotate(.9deg)} .obra:nth-child(3n){transform:rotate(-.4deg)}
+.ab{position:relative;aspect-ratio:4/5;overflow:hidden;background:#fff;--x:50%;border:1px solid var(--tinta-3);touch-action:pan-y}
+.ab .pista{position:absolute;left:50%;bottom:14px;transform:translateX(-50%) rotate(-2deg);z-index:3;pointer-events:none;font-family:var(--mano);font-size:16px;white-space:nowrap;background:var(--amarillo);border:1.8px solid var(--tinta);border-radius:var(--bc);padding:3px 12px;box-shadow:2px 3px 0 var(--tinta-3);transition:opacity .4s}
+.ab .pista i{font-style:normal;display:inline-block}
+.motion .ab .pista i:first-child{animation:flechaI 1.2s ease-in-out infinite}
+.motion .ab .pista i:last-child{animation:flechaD 1.2s ease-in-out infinite}
+@keyframes flechaI{50%{transform:translateX(-5px)}}
+@keyframes flechaD{50%{transform:translateX(5px)}}
+.motion .ab:not(.usado) .linea::after{animation:empuja 1.6s ease-in-out infinite}
+@keyframes empuja{0%,100%{transform:translate(-50%,-50%) rotate(-8deg)}25%{transform:translate(calc(-50% - 9px),-50%) rotate(-14deg)}75%{transform:translate(calc(-50% + 9px),-50%) rotate(-2deg)}}
+.motion .ab:not(.usado) .linea::before{content:"";position:absolute;top:50%;left:50%;width:36px;height:36px;margin:-18px 0 0 -18px;border-radius:50%;border:2px solid var(--amarillo);animation:onda 1.6s ease-out infinite}
+@keyframes onda{from{transform:scale(1);opacity:.9}to{transform:scale(2.1);opacity:0}}
+.ab.usado .pista{opacity:0}
+.ab .capa{position:absolute;inset:0}
+.ab .capa img{width:100%;height:100%;object-fit:cover}
+.ab .capa img.plano{object-fit:contain;background:#fff;padding:6px}
+.ab .capa svg{width:100%;height:100%}
+.ab .b{clip-path:inset(0 0 0 var(--x));background:var(--hoja)}
+.ab .linea{position:absolute;top:0;bottom:0;left:var(--x);width:3px;background:var(--tinta);transform:translateX(-1.5px);z-index:2}
+.ab .linea::after{content:"✎";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-8deg);background:var(--amarillo);color:var(--tinta);font-size:18px;width:36px;height:36px;display:grid;place-items:center;border:2px solid var(--tinta);border-radius:50% 46% 52% 48%}
+.ab input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;z-index:4}
+.ab:focus-within .linea::after{outline:2px dashed var(--elec);outline-offset:3px}
+.ab .rot{position:absolute;top:10px;font-family:var(--mano);font-size:14px;padding:1px 9px;background:var(--hoja);border:1.5px solid var(--tinta);pointer-events:none;z-index:2}
+.ab .rot.l{left:10px;transform:rotate(-3deg)}.ab .rot.r{right:10px;background:var(--amarillo);transform:rotate(3deg)}
+.obra-info{padding:14px 4px 0}
+.obra-info h3{margin:0 0 6px;font-size:18px;line-height:1.3}
+.obra-meta{font-family:var(--mano);font-size:15px;color:var(--tinta-2);display:flex;flex-wrap:wrap;gap:2px 14px;margin-bottom:6px}
+.obra-det{font-size:14px;color:var(--tinta-2);margin:0 0 12px}
+.obra-pie{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-top:1.5px dashed var(--tinta-3);padding-top:10px}
+.obra-rol{font-family:var(--mano);font-size:15px;border:1.6px solid var(--tinta);border-radius:var(--bc);padding:1px 9px}
+.obra-cifra{text-align:right;font-family:var(--mano)}
+.obra-cifra b{display:block;font-size:27px;line-height:1.05;font-weight:400}
+.obra-cifra small{font-size:13px;color:var(--tinta-2)}
+.credito{font-family:var(--mano);font-size:13px;color:var(--tinta-2);margin-top:8px}
+.obra-serv{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:4px 12px}
+.obra-serv li{font-family:var(--mano);font-size:15px}
+.obra-serv li::before{content:"✓ ";color:var(--elec)}
+.obra-rol.resalta{border-color:var(--tinta);font-size:17px}
+.ver-mas{margin-top:14px;width:100%;justify-content:center;font-size:18px;padding:9px 16px;background:var(--amarillo);border-radius:var(--bc)}
+.ver-mas span{opacity:.7}
+
+/* visor de fotos */
+.visor{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);width:100%;max-height:94vh;overflow:visible;color:var(--tinta)}
+.visor::backdrop{background:rgba(27,42,71,.72);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.motion .visor[open] .v-hoja{animation:sube .28s ease-out}
+@keyframes sube{from{transform:translateY(24px) rotate(-1deg);opacity:0}}
+.v-hoja{padding:14px 16px 10px;display:flex;flex-direction:column;max-height:94vh}
+.v-cab{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 2px 10px}
+.v-cab b{display:block;font-size:18px}
+.v-cab span{font-family:var(--mano);font-size:16px;color:var(--tinta-2)}
+.v-cerrar{font-size:18px;padding:6px 14px;background:var(--amarillo);flex:none}
+.v-escena{position:relative;margin:0;flex:1;min-height:0;background:#1b1f27;display:grid;place-items:center;border:1.5px solid var(--tinta);touch-action:pan-y}
+.v-escena img{max-width:100%;max-height:min(68vh,760px);object-fit:contain;display:block}
+.v-flecha{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;font-size:34px;line-height:1;border:2px solid var(--tinta);background:var(--hoja);color:var(--tinta);border-radius:50% 46% 52% 48%;cursor:pointer;display:grid;place-items:center;padding:0 0 4px}
+.v-flecha:hover{background:var(--amarillo)}
+.v-flecha.ant{left:10px}.v-flecha.sig{right:10px}
+.v-cont{position:absolute;bottom:10px;right:12px;font-family:var(--mano);font-size:15px;background:var(--hoja);border:1.5px solid var(--tinta);padding:0 9px;border-radius:var(--bc)}
+.v-minis{display:flex;gap:14px;overflow-x:auto;padding:12px 2px 4px}
+.v-gr{flex:none}
+.v-gr small{display:block;font-family:var(--mano);font-size:14px;color:var(--tinta-2);margin-bottom:4px}
+.v-gr div{display:flex;gap:6px}
+.v-mini{width:74px;height:56px;padding:0;border:2px solid transparent;cursor:pointer;background:#ddd;opacity:.65;flex:none}
+.v-mini img{width:100%;height:100%;object-fit:cover;display:block}
+.v-mini[aria-current="true"]{border-color:var(--elec);opacity:1}
+.v-mini:hover{opacity:1}
+.v-ayuda{margin:4px 0 0;font-family:var(--mano);font-size:13px;color:var(--tinta-2);text-align:center}
+@media (max-width:700px){.v-flecha{width:40px;height:40px;font-size:28px}.v-escena img{max-height:58vh}.v-cerrar #visorCerrarTxt{display:inline}}
+
+
+/* Lámina 04 · MiLibroDeObra */
+.mldo-chip{display:inline-flex;align-items:center;gap:9px;font-family:var(--mano);font-size:17px;text-decoration:none;margin:0 0 24px;padding:4px 12px 4px 5px;border:1.8px solid var(--tinta);border-radius:var(--bc);background:var(--hoja)}
+.mldo-chip img{border-radius:6px}
+.mldo-chip:hover{background:rgba(242,193,78,.45)}
+.mldo{border-top:1.4px dashed var(--tinta-3)}
+.mldo-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:52px;align-items:center}
+.mldo-lema{display:flex;align-items:center;gap:14px;font-family:var(--mano);font-size:clamp(21px,2.3vw,27px);margin:.3em 0 .7em}
+.mldo-lema img{border-radius:11px;flex:none}
+.mldo-pasos{list-style:none;counter-reset:p;margin:22px 0;padding:0;display:grid;gap:14px;max-width:60ch}
+.mldo-pasos li{counter-increment:p;display:grid;grid-template-columns:40px 1fr;gap:0 14px}
+.mldo-pasos li::before{content:counter(p);grid-row:span 2;width:36px;height:36px;display:grid;place-items:center;border:1.8px solid var(--tinta);border-radius:50% 46% 54% 48%/52% 48% 50% 46%;font-family:var(--mano);font-size:18px;background:var(--amarillo)}
+.mldo-pasos b{font-family:var(--mano);font-weight:400;font-size:21px;line-height:1.3}
+.mldo-pasos span{color:var(--tinta-2)}
+.mldo-origen{font-family:var(--mano);font-size:15px;color:var(--tinta-2);margin:0 0 22px}
+.tel{margin:0;display:flex;justify-content:center}
+.tel-marco{width:min(300px,100%);background:#fff;border:3px solid var(--tinta);border-radius:34px 30px 36px 32px;padding:16px 14px 16px;box-shadow:6px 8px 0 var(--tinta-3);transform:rotate(2deg)}
+.tel-cab{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;padding-bottom:10px;border-bottom:1.5px dashed var(--tinta-3);margin-bottom:12px}
+.tel-cab img{border-radius:7px}
+.tel-msg{background:#DCF3D6;border-radius:12px 12px 12px 3px;padding:12px 13px;display:flex;flex-direction:column;gap:4px;font-size:14px;line-height:1.35}
+.tel-msg b{font-size:15px}
+.tel-link{color:#1f5fbf;text-decoration:underline}
+.tel-nota{display:block;margin-top:10px;font-family:var(--mano);font-size:13px;color:var(--tinta-2);text-align:center}
+@media (max-width:899px){.mldo-grid{grid-template-columns:1fr;gap:36px}}
+
+/* Lámina 05 · Proceso */
+.bloque{padding:100px 0}
+.gantt{margin-top:34px;background:var(--hoja);border:2px solid var(--tinta);border-radius:6px 10px 5px 12px;overflow-x:auto}
+.g-tabla{min-width:640px}
+.g-fila{display:grid;grid-template-columns:minmax(210px,1.3fr) 3fr;border-bottom:1.4px dashed var(--tinta-3)}
+.g-fila:last-child{border-bottom:0}
+.g-cab{font-family:var(--mano);font-size:15px;border-bottom:2px solid var(--tinta)}
+.g-cab>div{padding:8px 14px}
+.g-sem{display:grid;grid-template-columns:repeat(8,1fr);padding:0!important}
+.g-sem span{padding:8px 0;text-align:center;border-left:1.2px dashed var(--tinta-3)}
+.g-tarea{padding:14px;border-right:1.6px solid var(--tinta)}
+.g-tarea b{display:block;font-family:var(--mano);font-weight:400;font-size:20px}
+.g-tarea small{display:block;font-size:14px;color:var(--tinta-2);line-height:1.45;margin-top:2px}
+.g-pista{position:relative;background-image:linear-gradient(90deg,var(--tinta-3) 1px,transparent 1px);background-size:12.5% 100%}
+.g-barra{position:absolute;top:50%;height:20px;margin-top:-10px;left:calc(var(--a) * 12.5%);width:calc(var(--w) * 12.5%);transform-origin:0 50%;border:2px solid var(--tinta);border-radius:var(--bc);background:repeating-linear-gradient(-55deg,var(--tinta) 0 1.4px,transparent 1.4px 6px)}
+.g-barra.acento{background:rgba(242,193,78,.85)}
+.g-barra::after{content:"";position:absolute;right:-9px;top:50%;width:12px;height:12px;background:var(--hoja);border:2px solid var(--elec);transform:translateY(-50%) rotate(45deg)}
+.g-nota{font-family:var(--mano);font-size:15px;color:var(--tinta-2);padding:10px 14px;border-top:1.4px dashed var(--tinta-3)}
+.notas3{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.notas3>div{padding:18px;background:#FFF6C9;box-shadow:0 10px 18px -14px rgba(27,42,71,.6);transform:rotate(-1deg)}
+.notas3>div:nth-child(2){background:#E6F0FF;transform:rotate(.8deg)}
+.notas3>div:nth-child(3){background:#FDE5DF;transform:rotate(-.4deg)}
+.notas3 svg{width:36px;height:36px;margin-bottom:6px}
+.notas3 b{display:block;font-family:var(--mano);font-weight:400;font-size:20px;margin-bottom:2px}
+.notas3 p{margin:0;font-size:15px}
+
+/* Lámina 05 · Sobre mí */
+.sobre{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:52px;align-items:start;margin-top:30px}
+.polaroid{background:#fff;padding:12px 12px 46px;box-shadow:0 14px 28px -18px rgba(27,42,71,.6);transform:rotate(-2.5deg);position:relative;margin:0}
+.polaroid .foto{aspect-ratio:4/5;background:repeating-linear-gradient(45deg,var(--papel-2) 0 10px,var(--papel) 10px 20px);display:grid;place-items:center}
+.polaroid .foto img{width:100%;height:100%;object-fit:cover}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:10px;text-align:center;font-family:var(--mano);font-size:18px}
+.datos{margin:26px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:4px 30px}
+.datos div{padding:10px 0;border-bottom:1.4px dashed var(--tinta-3)}
+.datos dt{font-family:var(--mano);font-size:15px;color:var(--tinta-2)}
+.datos dd{margin:0;font-weight:700}
+.soft{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:4px}
+.soft span{font-family:var(--mano);font-weight:400;font-size:15px;border:1.5px solid var(--tinta);border-radius:var(--bc);padding:0 8px}
+@media (max-width:760px){.sobre{grid-template-columns:1fr}.polaroid{max-width:280px}}
+
+/* Lámina 06 · Contacto */
+.ot{margin-top:34px;padding:22px 26px 18px;background:var(--hoja);border:2px solid var(--tinta);border-radius:8px 12px 6px 14px;box-shadow:5px 6px 0 var(--tinta-3);display:grid;grid-template-columns:1fr 1fr;gap:4px 30px;position:relative}
+.ot-cab{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--mano);font-size:16px;border-bottom:2px solid var(--tinta);padding-bottom:10px;margin-bottom:8px}
+.ot-cab b{font-weight:400;font-size:22px}
+.campo{display:flex;flex-direction:column;padding:8px 0 10px}
+.campo.full{grid-column:1/-1}
+.campo label,.campo legend{font-family:var(--mano);font-size:15px;color:var(--tinta-2);padding:0}
+.campo input,.campo select,.campo textarea{font:inherit;font-family:var(--mano);font-size:20px;color:var(--tinta);background:transparent;border:0;border-bottom:1.6px solid var(--tinta-2);padding:4px 2px;outline:none;border-radius:0}
+.campo textarea{min-height:120px;resize:vertical;background:repeating-linear-gradient(transparent 0 33px,var(--tinta-3) 33px 34px);line-height:34px;border-bottom:0}
+.campo input:focus,.campo select:focus,.campo textarea:focus{border-bottom-color:var(--elec)}
+fieldset.campo{margin:0;border:0}
+.radios{display:flex;gap:22px;flex-wrap:wrap;margin-top:6px}
+.radios label{display:flex;gap:8px;align-items:center;font-size:19px;color:var(--tinta);cursor:pointer}
+.radios input{accent-color:var(--tinta);width:19px;height:19px}
+.ot-pie{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding-top:12px}
+.ot-pie .aviso{font-family:var(--mano);font-size:14px;color:var(--tinta-2);flex:1 1 240px}
+.sello{position:absolute;right:26px;top:58px;font-family:var(--mano);font-size:15px;color:var(--elec);border:2px solid var(--elec);border-radius:6px;padding:3px 10px;transform:rotate(8deg);opacity:.75;pointer-events:none}
+.directo{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.datos-cont{font-family:var(--mano);font-size:17px;margin:18px 0 0;user-select:all;overflow-wrap:anywhere}
+.msg-falta{font-family:var(--mano);font-size:16px;background:var(--amarillo);padding:8px 12px;margin-top:14px;display:none;border-radius:var(--bc)}
+.msg-falta.ver{display:block}
+@media (max-width:700px){.ot{grid-template-columns:1fr;padding:18px 16px}.sello{display:none}}
+footer{font-family:var(--mano);font-size:15px;padding:30px 0 40px;color:var(--tinta-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1.6px solid var(--tinta-3);padding-top:18px}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+<div class="barra-movil" id="barraMovil" aria-hidden="true"></div>
+<audio id="lapiz" src="assets/lapiz.mp3" preload="none" loop></audio>
+
+<header class="top">
+  <a class="marca" href="#inicio" aria-label="Inicio"><img class="marca-ico" src="assets/icono-lc.svg" alt="" width="38" height="38"><span data-p="nombre">Leonel Castillo</span></a>
+  <nav aria-label="Secciones">
+    <a href="#servicios" data-i18n="nav.serv">Servicios</a>
+    <a href="#obras" data-i18n="nav.obras">Obras</a>
+    <a href="#milibrodeobra">MiLibroDeObra</a>
+    <a href="#proceso" data-i18n="nav.proc">Proceso</a>
+    <a href="#sobre-mi" data-i18n="nav.sobre">Sobre mí</a>
+    <a href="#contacto" data-i18n="nav.cont">Contacto</a>
+  </nav>
+  <div class="ctrles">
+    <button class="ctrl" id="sonido" type="button" aria-pressed="false" title="Sonido de lápiz">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20l2-6L16 4l4 4L10 18zM14 6l4 4"/><path d="M19 15c1 1 1 3 0 4M21 13c2 2 2 6 0 8"/></svg>
+      <span class="txt" data-i18n="sonido">Lápiz</span>
+    </button>
+    <button class="ctrl" id="lang" type="button" aria-label="Switch to English">EN</button>
+  </div>
+</header>
+
+<div class="grua" id="grua" aria-hidden="true"></div>
+
+<main id="contenido">
+
+<!-- ================= LÁMINA 01 · INICIO ================= -->
+<section class="hero" id="inicio" data-lam="1">
+  <div class="wrap">
+    <div class="hero-txt">
+      <span class="lamina"><b>01</b><span data-i18n="lam1">de 07 · Inicio</span></span>
+      <h1><span data-p="nombre">Leonel Castillo</span><span class="rol"><span class="resalta"><span aria-hidden="true">— </span><span data-i18n="titulo">Ingeniero Civil</span></span></span></h1>
+      <p class="sub" data-i18n="hero.sub">Del plano a la obra. Diseño, calculo y construyo.</p>
+      <p class="zona"><span data-i18n="hero.zona">Con base en</span> <span data-p="ciudad">Barcelona, Anzoátegui (Venezuela)</span> · <span data-p="registro"></span></p>
+      <a class="mldo-chip" href="#milibrodeobra"><img src="assets/mldo-logo.svg" alt="" width="24" height="24"><span data-i18n="hero.mldo">Fundador de MiLibroDeObra</span></a>
+      <div class="cta">
+        <a class="btn btn-1" href="#contacto" data-tipo="diseno" data-i18n="cta.dis">Diseñar mi obra</a>
+        <a class="btn btn-2" href="#contacto" data-tipo="obra" data-i18n="cta.obra">Construir mi obra</a>
+      </div>
+      <div class="bajar"><svg viewBox="0 0 26 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M13 3c1 10-1 20 0 31M6 27c3 3 5 6 7 8 2-3 4-6 7-8"/></svg><span data-i18n="hero.bajar">Baja y mira cómo se dibuja la obra</span></div>
+    </div>
+    <div class="hero-hoja hoja cinta">
+      <svg id="heroPlano" viewBox="0 0 1000 770" role="img" aria-label="Boceto de una planta tipo con ejes, cotas y columnas"></svg>
+      <div class="cajetin">
+        <div><small data-i18n="caj.prof">Profesional</small><span data-p="nombre">Leonel Castillo</span></div>
+        <div><small data-i18n="caj.reg">Registro</small><span data-p="registro"></span></div>
+        <div><small data-i18n="caj.esc">Escala</small>1:100</div>
+        <div><small data-i18n="caj.proy">Proyecto</small><span data-i18n="caj.proyv">Portafolio profesional</span></div>
+        <div><small data-i18n="caj.lam">Lámina</small>01/07</div>
+        <div><small data-i18n="caj.fecha">Fecha</small><span id="cajFecha">2026</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LÁMINA 02 · SERVICIOS ================= -->
+<section class="serv" id="servicios" data-lam="2">
+  <div class="wrap">
+    <figure class="lamina-fija" aria-hidden="true">
+      <div class="hoja cinta cinta-m">
+        <svg id="boceto" viewBox="-235 -190 470 430"></svg>
+        <figcaption class="cap"><span id="capFase">Fase 00 · Planta</span><b id="capNota">esc. 1:100</b></figcaption>
+      </div>
+    </figure>
+
+    <div class="serv-col serv-intro" id="servIntro">
+      <span class="lamina"><b>02</b><span data-i18n="lam2">de 07 · Servicios</span></span>
+      <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="serv.h">Cada fase de la obra, un servicio</h2></div>
+      <p class="lead" data-i18n="serv.lead">Baja despacio: el boceto se va dibujando fase por fase. En cada una te cuento qué hago, desde la mesa de diseño o en la propia obra.</p>
+      <div class="leyenda">
+        <i class="etq dis" data-i18n="etq.dis">Diseño</i>
+        <i class="etq obr" data-i18n="etq.obr">En obra</i>
+        <i class="etq amb" data-i18n="etq.amb">Diseño + obra</i>
+      </div>
+    </div>
+
+    <article class="serv-col fase" data-fase="1">
+      <div class="tarjeta reveal">
+        <div class="fase-n"><span data-i18n="f1.n">Fase 01 · Estudio y cimentación</span><i class="etq amb" data-i18n="etq.amb">Diseño + obra</i></div>
+        <h3><svg viewBox="0 0 42 42" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 29c12 1 24-1 36 0M7 29v7h9v-7M26 29v7h9v-7M3 23l8-7 6 4 8-9 6 5 8-4"/><circle cx="33" cy="8" r="2.4"/></svg><span data-i18n="f1.h">Estudios preliminares y fundaciones</span></h3>
+        <p class="serv" data-i18n="f1.s">Estudios preliminares · Topografía · Diseño de fundaciones</p>
+        <p data-i18n="f1.p">Antes de excavar, entender el terreno. Coordino los estudios preliminares y el levantamiento topográfico, y diseño las fundaciones según el suelo y las cargas reales del proyecto.</p>
+        <ul class="chips"><li data-i18n="f1.c1">Visita y estudio del sitio</li><li data-i18n="f1.c2">Levantamiento topográfico</li><li data-i18n="f1.c3">Zapatas y vigas de riostra</li></ul>
+      </div>
+    </article>
+    <article class="serv-col fase" data-fase="2">
+      <div class="tarjeta reveal">
+        <div class="fase-n"><span data-i18n="f2.n">Fase 02 · Estructura</span><i class="etq dis" data-i18n="etq.dis">Diseño</i></div>
+        <h3><svg viewBox="0 0 42 42" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M7 38c1-9-1-19 0-29M21 38c1-9-1-19 0-29M35 38c-1-9 1-19 0-29M3 10c12 1 24-1 36 0M3 23c12-1 24 1 36 0M7 10l14 13M21 10l14 13"/></svg><span data-i18n="f2.h">Cálculo y diseño estructural</span></h3>
+        <p class="serv" data-i18n="f2.s">Concreto armado · Acero · Memorias de cálculo</p>
+        <p data-i18n="f2.p">Columnas, vigas y losas que trabajan como deben. Modelo, calculo y detallo estructuras de concreto armado y acero, con una memoria de cálculo clara que se puede revisar paso a paso.</p>
+        <ul class="chips"><li data-i18n="f2.c1">Modelo y análisis</li><li data-i18n="f2.c2">Despiece de acero</li><li data-i18n="f2.c3">Memoria de cálculo</li></ul>
+      </div>
+    </article>
+    <article class="serv-col fase" data-fase="3">
+      <div class="tarjeta reveal">
+        <div class="fase-n"><span data-i18n="f3.n">Fase 03 · Losas y muros</span><i class="etq dis" data-i18n="etq.dis">Diseño</i></div>
+        <h3><svg viewBox="0 0 42 42" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 31l17 8 17-8-17-8zM4 22l17 8 17-8M4 14l17 8 17-8-17-8z"/></svg><span data-i18n="f3.h">Planos y modelado BIM</span></h3>
+        <p class="serv">Revit · AutoCAD · Civil 3D</p>
+        <p data-i18n="f3.p">Planos de arquitectura e ingeniería listos para construir, y modelos BIM que coordinan las disciplinas antes de que el error llegue a la obra.</p>
+        <ul class="chips"><li data-i18n="f3.c1">Planos de arquitectura</li><li data-i18n="f3.c2">Planos estructurales</li><li data-i18n="f3.c3">Modelo BIM</li></ul>
+      </div>
+    </article>
+    <article class="serv-col fase" data-fase="4">
+      <div class="tarjeta reveal">
+        <div class="fase-n"><span data-i18n="f4.n">Fase 04 · Instalaciones</span><i class="etq dis" data-i18n="etq.dis">Diseño</i></div>
+        <h3><svg viewBox="0 0 42 42" fill="none" stroke-width="1.9" stroke-linecap="round"><path d="M7 38c1-8-1-16 0-24 5 1 10-1 15 0 0 4 1 7 0 10 5 1 10-1 15 0" stroke="#2F6FD6"/><path d="M13 38c1-6-1-13 0-19 5 1 10-1 14 0 1-2-1-5 0-7 3 1 6-1 9 0" stroke="#C8372D"/></svg><span data-i18n="f4.h">Cómputos, presupuestos y cronogramas</span></h3>
+        <p class="serv" data-i18n="f4.s">Cómputos métricos · APU · Presupuesto · Cronograma</p>
+        <p data-i18n="f4.p">Cada metro y cada saco cuentan. Hago cómputos métricos, análisis de precios unitarios, presupuestos y cronogramas para que decidas con números y no a ojo.</p>
+        <ul class="chips"><li data-i18n="f4.c1">Cómputos métricos</li><li data-i18n="f4.c2">Análisis de precios unitarios</li><li data-i18n="f4.c3">Cronograma de obra</li></ul>
+      </div>
+    </article>
+    <article class="serv-col fase" data-fase="5">
+      <div class="tarjeta reveal">
+        <div class="fase-n"><span data-i18n="f5.n">Fase 05 · Acabados</span><i class="etq obr" data-i18n="etq.obr">En obra</i></div>
+        <h3><svg viewBox="0 0 42 42" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 19a13 13 0 0 1 26 0M5 19c10 1 21-1 32 0l-1 4c-10-1-20 1-30 0zM21 6v4M12 27c0 4 1 8 0 11 6 1 12-1 18 0-1-4 1-8 0-11"/><path d="M16 32l3 3 7-7" stroke="#C8372D"/></svg><span data-i18n="f5.h">Dirección y supervisión de obra</span></h3>
+        <p class="serv" data-i18n="f5.s">Dirección · Supervisión e inspección · Llave en mano</p>
+        <p data-i18n="f5.p">En sitio, todos los días. Dirijo, superviso e inspecciono la ejecución, llevo el libro de obra y el reporte diario, y entrego la obra llave en mano.</p>
+        <ul class="chips"><li data-i18n="f5.c1">Libro de obra y reporte diario</li><li data-i18n="f5.c2">Control de avance y materiales</li><li data-i18n="f5.c3">Mediciones y valuaciones</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= LÁMINA 03 · OBRAS ================= -->
+<section id="obras" data-lam="3">
+  <div class="obras-cab">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="lamina"><b>03</b><span data-i18n="lam3">de 07 · Obras</span></span>
+        <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="obras.h">Edificio terminado</h2></div>
+        <p class="lead" data-i18n="obras.lead">El boceto ya tiene color: así termina un proyecto, construido y entregado. Más abajo están obras y proyectos reales en los que he trabajado.</p>
+      </div>
+      <figure class="final reveal" aria-hidden="true"><div class="hoja cinta"><svg id="bocetoFinal" viewBox="-235 -190 470 430"></svg></div></figure>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:60px">
+    <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="obras.h2">Obras y proyectos</h2></div>
+    <p class="lead" data-i18n="obras.lead2">Arrastra el lápiz amarillo de cada imagen para pasar de la obra a su plano o su boceto.</p>
+    <div class="galeria" id="galeria"></div>
+  </div>
+</section>
+
+<!-- ================= LÁMINA 04 · MILIBRODEOBRA ================= -->
+<section id="milibrodeobra" class="bloque mldo" data-lam="4">
+  <div class="wrap">
+    <span class="lamina"><b>04</b><span data-i18n="lam4m">de 07 · MiLibroDeObra</span></span>
+    <div class="mldo-grid">
+      <div class="mldo-txt">
+        <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="mldo.h">Mi proyecto: MiLibroDeObra</h2></div>
+        <p class="mldo-lema"><img src="assets/mldo-logo.svg" alt="Logo de MiLibroDeObra" width="48" height="48"><span class="resalta" data-i18n="mldo.lema">La libreta diaria de tu obra, hecha web.</span></p>
+        <p class="lead" data-i18n="mldo.p">Fundé MiLibroDeObra para resolver lo que vivo en cada obra: el parte diario que se termina escribiendo varias veces. La uso todos los días en mi propia obra como ingeniero de obra.</p>
+        <ol class="mldo-pasos">
+          <li><b data-i18n="mldo.s1h">Abres el día</b><span data-i18n="mldo.s1p">Personal y cuadrillas, tareas previstas y clima. Puedes traer lo del día anterior y editar lo que cambió.</span></li>
+          <li><b data-i18n="mldo.s2h">Cierras el día</b><span data-i18n="mldo.s2p">Lo realizado, materiales consumidos, observaciones y fotos.</span></li>
+          <li><b data-i18n="mldo.s3h">Lo compartes</b><span data-i18n="mldo.s3p">Con esa misma carga preparas el mensaje para WhatsApp, el reporte web y el libro de obra.</span></li>
+        </ol>
+        <p class="mldo-origen" data-i18n="mldo.origen">Nació de mi tesis de grado (2020) sobre libros de obra y expedientes de contratación.</p>
+        <div class="cta">
+          <a class="btn btn-1" href="https://www.milibrodeobra.com/registro" target="_blank" rel="noopener" data-i18n="mldo.cta1">Empieza gratis</a>
+          <a class="btn btn-2" href="https://www.milibrodeobra.com/" target="_blank" rel="noopener" data-i18n="mldo.cta2">Conoce MiLibroDeObra</a>
+        </div>
+      </div>
+      <figure class="tel reveal">
+        <div class="tel-marco">
+          <div class="tel-cab"><img src="assets/mldo-logo.svg" alt="" width="28" height="28"> MiLibroDeObra</div>
+          <div class="tel-msg">
+            <b data-i18n="tel.t">Parte diario · Obra de ejemplo</b>
+            <span data-i18n="tel.f">Lunes · soleado</span>
+            <span data-i18n="tel.p">Personal: 8 en 2 cuadrillas</span>
+            <span data-i18n="tel.a1">✓ Vaciado de losa N1, ejes A–B</span>
+            <span data-i18n="tel.a2">✓ Friso en fachada norte</span>
+            <span data-i18n="tel.m">Materiales: 40 sacos de cemento</span>
+            <span class="tel-link" data-i18n="tel.fo">6 fotos · ver reporte web</span>
+          </div>
+          <small class="tel-nota" data-i18n="tel.nota">Ejemplo ficticio del mensaje que se prepara</small>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LÁMINA 05 · PROCESO ================= -->
+<section id="proceso" class="bloque" data-lam="5">
+  <div class="wrap">
+    <span class="lamina"><b>05</b><span data-i18n="lam4">de 07 · Cómo trabajo</span></span>
+    <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="proc.h">Cronograma de trabajo</h2></div>
+    <p class="lead" data-i18n="proc.lead">Cuatro pasos, como un cronograma de obra. Las duraciones cambian con cada proyecto: aquí son solo una referencia.</p>
+    <div class="gantt reveal">
+      <div class="g-tabla">
+        <div class="g-fila g-cab"><div data-i18n="proc.act">Actividad</div><div class="g-sem"><span>S1</span><span>S2</span><span>S3</span><span>S4</span><span>S5</span><span>S6</span><span>S7</span><span>S8</span></div></div>
+        <div class="g-fila"><div class="g-tarea"><b data-i18n="p1.h">1 · Consulta</b><small data-i18n="p1.p">Me cuentas qué necesitas. Reviso lo que tengas: planos, fotos, el terreno.</small></div><div class="g-pista"><i class="g-barra acento" style="--a:0;--w:1"></i></div></div>
+        <div class="g-fila"><div class="g-tarea"><b data-i18n="p2.h">2 · Propuesta y presupuesto</b><small data-i18n="p2.p">Alcance, entregables, plazo y precio por escrito, antes de empezar.</small></div><div class="g-pista"><i class="g-barra" style="--a:1;--w:1"></i></div></div>
+        <div class="g-fila"><div class="g-tarea"><b data-i18n="p3.h">3 · Ejecución</b><small data-i18n="p3.p">Cálculo, planos u obra, con avances que puedes revisar en cada etapa.</small></div><div class="g-pista"><i class="g-barra" style="--a:2;--w:4.5"></i></div></div>
+        <div class="g-fila"><div class="g-tarea"><b data-i18n="p4.h">4 · Entrega</b><small data-i18n="p4.p">Entregables finales, revisión contigo y cierre ordenado.</small></div><div class="g-pista"><i class="g-barra acento" style="--a:6.5;--w:1.3"></i></div></div>
+      </div>
+      <div class="g-nota" data-i18n="proc.nota">◇ = hito de aprobación. Duración ilustrativa, no es un plazo comprometido.</div>
+    </div>
+    <div class="notas3">
+      <div class="reveal"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8c7 1 14-1 21 0 0 6 1 11 0 16-7-1-14 1-21 0-1-5 1-11 0-16zM25 13l7-4c0 6 1 11 0 16l-7-4M10 31h9M14 24v7"/></svg><b data-i18n="r1.h">En obra o por videollamada</b><p data-i18n="r1.p">Arranque, revisiones y entrega en reuniones cortas, con agenda y acta.</p></div>
+      <div class="reveal"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M8 3c5 1 9-1 14 0l6 6c0 8 1 15 0 23-7-1-13 1-20 0 1-10-1-19 0-29zM22 3v6h6M12 16h11M12 21h11M12 26h7"/></svg><b data-i18n="r2.h">Entregables digitales</b><p data-i18n="r2.p">Planos, memorias, cómputos y presupuestos en formatos que tu equipo puede abrir.</p></div>
+      <div class="reveal"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M5 18a12 12 0 0 1 21-8M31 18a12 12 0 0 1-21 8M27 3v7h-7M9 33v-7h7"/></svg><b data-i18n="r3.h">Revisiones acordadas</b><p data-i18n="r3.p">Las rondas de revisión se fijan en la propuesta, para que no haya sorpresas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LÁMINA 06 · SOBRE MÍ ================= -->
+<section id="sobre-mi" class="bloque" data-lam="6">
+  <div class="wrap">
+    <span class="lamina"><b>06</b><span data-i18n="lam5">de 07 · Sobre mí</span></span>
+    <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="sobre.h">El ingeniero detrás del boceto</h2></div>
+    <div class="sobre">
+      <figure class="polaroid reveal" id="fotoPerfil"><div class="foto"></div><figcaption data-p="nombre">Leonel Castillo</figcaption></figure>
+      <div class="reveal">
+        <p class="lead" data-i18n="sobre.p1">Ingeniero civil egresado del IUP Santiago Mariño (2020), inscrito en el Colegio de Ingenieros de Venezuela. Tengo experiencia en residencia de obra, estimación de costos, administración de contratos y documentación técnica.</p>
+        <p class="lead" data-i18n="sobre.p2">Uno la ingeniería con la tecnología: fundé MiLibroDeObra, una aplicación web para llevar el registro diario de la obra desde el celular, y uso inteligencia artificial en mis procesos, siempre con revisión humana.</p>
+        <dl class="datos">
+          <div><dt data-i18n="d.reg">Registro profesional</dt><dd><span data-p="registro"></span></dd></div>
+          <div><dt data-i18n="d.exp">Experiencia</dt><dd><span data-p="anos"></span></dd></div>
+          <div><dt data-i18n="d.esp">Especialidad</dt><dd><span data-p="especialidad"></span></dd></div>
+          <div><dt data-i18n="d.idi">Idiomas</dt><dd><span data-p="idiomas"></span></dd></div>
+          <div><dt data-i18n="d.zona">Zona horaria</dt><dd><span data-p="zona"></span></dd></div>
+          <div><dt data-i18n="d.disp">Disponibilidad</dt><dd><span data-p="disponibilidad"></span></dd></div>
+          <div style="grid-column:1/-1"><dt>Software</dt><dd class="soft" id="soft"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LÁMINA 07 · CONTACTO ================= -->
+<section id="contacto" class="bloque" data-lam="7">
+  <div class="wrap">
+    <span class="lamina"><b>07</b><span data-i18n="lam6">de 07 · Contacto</span></span>
+    <div class="tit"><span class="cota"><span></span></span><h2 data-i18n="cont.h">Orden de trabajo</h2></div>
+    <p class="lead" data-i18n="cont.lead">Cuéntame tu proyecto. Te respondo con preguntas concretas o con una propuesta.</p>
+
+    <form class="ot" id="ot" novalidate>
+      <span class="sello" data-i18n="ot.sello">por revisar</span>
+      <div class="ot-cab"><b data-i18n="ot.t">Orden de trabajo</b><span>N.º <span id="otNum">OT-0000</span></span><span><span data-i18n="caj.fecha">Fecha</span>: <span id="otFecha"></span></span></div>
+      <div class="campo"><label for="f-nombre" data-i18n="ot.nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+      <div class="campo"><label for="f-correo" data-i18n="ot.correo">Correo</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
+      <fieldset class="campo full"><legend data-i18n="ot.tipo">¿Qué necesitas?</legend>
+        <div class="radios">
+          <label><input type="radio" name="tipo" value="diseno" checked> <span data-i18n="cta.dis">Diseñar mi obra</span></label>
+          <label><input type="radio" name="tipo" value="obra"> <span data-i18n="cta.obra">Construir mi obra</span></label>
+        </div>
+      </fieldset>
+      <div class="campo"><label for="f-ubic" data-i18n="ot.ubic">Ubicación del proyecto</label><input id="f-ubic" name="ubicacion" autocomplete="address-level2"></div>
+      <div class="campo"><label for="f-pres" data-i18n="ot.pres">Presupuesto estimado</label>
+        <select id="f-pres" name="presupuesto">
+          <option value="" data-i18n="ot.pres0">Aún no lo sé</option>
+          <option>&lt; USD 1.000</option>
+          <option>USD 1.000 – 5.000</option>
+          <option>USD 5.000 – 20.000</option>
+          <option>USD 20.000 – 100.000</option>
+          <option>&gt; USD 100.000</option>
+        </select></div>
+      <div class="campo full"><label for="f-msg" data-i18n="ot.msg">Mensaje</label><textarea id="f-msg" name="mensaje" required></textarea></div>
+      <div class="ot-pie">
+        <button class="btn btn-1" type="submit" value="correo" data-i18n="ot.env1">Enviar por correo</button>
+        <button class="btn btn-2" type="submit" value="wa" data-i18n="ot.env2">Enviar por WhatsApp</button>
+        <span class="aviso" data-i18n="ot.aviso">Este sitio no guarda tus datos: el mensaje se abre listo en tu correo o en WhatsApp para que lo envíes tú.</span>
+      </div>
+    </form>
+    <div class="msg-falta" id="msgFalta" role="status"></div>
+
+    <div class="directo">
+      <a class="btn btn-2" id="lnkWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-2" id="lnkIn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-2" id="lnkIg" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn-2" id="lnkMail" href="#" data-i18n="cont.mail">Correo</a>
+      <a class="btn btn-1" id="lnkCv" href="#" download data-i18n="cont.cv">Descargar CV (PDF)</a>
+    </div>
+    <p class="datos-cont" id="datosCont"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="anio">2026</span> <span data-p="nombre">Leonel Castillo</span> · <span data-i18n="titulo">Ingeniero Civil</span> · <span data-p="registro"></span></span>
+    <span data-i18n="foot">Del plano a la obra.</span>
+  </div>
+</footer>
+
+<dialog class="visor" id="visor" aria-labelledby="visorTit">
+  <div class="v-hoja hoja">
+    <div class="v-cab">
+      <div><b id="visorTit"></b><span id="visorGrupo"></span></div>
+      <button class="ctrl v-cerrar" id="visorCerrar" type="button"><span aria-hidden="true">✕</span> <span id="visorCerrarTxt">Cerrar</span></button>
+    </div>
+    <figure class="v-escena">
+      <img id="visorImg" alt="">
+      <button class="v-flecha ant" id="visorAnt" type="button" aria-label="Foto anterior">‹</button>
+      <button class="v-flecha sig" id="visorSig" type="button" aria-label="Foto siguiente">›</button>
+      <figcaption class="v-cont" id="visorCont"></figcaption>
+    </figure>
+    <div class="v-minis" id="visorMinis"></div>
+    <p class="v-ayuda" id="visorAyuda"></p>
+  </div>
+</dialog>
+
+<script src="assets/rough.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>
+/* =====================================================================
+   DATOS — REEMPLAZA AQUÍ. Lo que quede en null sale en la página como
+   un marcador amarillo [ ... ] para que se vea que falta.
+   ===================================================================== */
+const PERFIL = {
+  nombre: "Leonel Castillo",
+  ciudad: "Barcelona, Anzoátegui (Venezuela)",
+  registro: "CIV N.º 318718",
+  especialidad: null,          // ej. "Edificaciones" / "Costos y obra"
+  anos: null,                  // ej. "6 años"
+  zona: "UTC−4 (Venezuela)",
+  disponibilidad: null,        // ej. "Nuevos proyectos desde enero 2027"
+  idiomas: { es: "Español (nativo) · Inglés C2 (EF SET 75/100)", en: "Spanish (native) · English C2 (EF SET 75/100)" },
+  software: ["Revit", "Civil 3D", "AutoCAD", "Lulowin NG", "Excel", "Python", "JavaScript"],
+  foto: null,                  // ej. "assets/leonel.webp"
+  correo: "ingleonelcastilloocas@gmail.com",
+  whatsapp: "584122550770",    // solo dígitos con código de país
+  telefono: "+58 412 255 0770",
+  linkedin: "https://www.linkedin.com/in/leonel-castillo-s-691063194/",
+  instagram: "leonelcastillo.o",
+  cv: "assets/cv-leonel-castillo.pdf"
+};
+// a: imagen principal · b: imagen al deslizar (si src es null se dibuja un boceto)
+// encaje: "cover" para fotos, "contain" para planos
+const OBRAS = [
+  {
+    nombre: { es: "Diseño de peaje, Troncal 9, sector Las Cumbres de Guatamare", en: "Toll plaza design, Troncal 9, Las Cumbres de Guatamare" },
+    ubicacion: { es: "Estado Sucre, Venezuela", en: "Sucre State, Venezuela" },
+    anio: "2022",
+    detalle: { es: "Implantación, levantamiento planialtimétrico, caseta administrativa, fachadas, cómputos métricos, presupuesto y estudio de tránsito.", en: "Site layout, topographic survey, administration booth, elevations, quantity take-off, budget and traffic study." },
+    rol: { es: "Diseño y presupuesto", en: "Design and budget" },
+    servicios: { es: ["Diseño de implantación", "Caseta y fachadas", "Topografía", "Cómputos y presupuesto"], en: ["Site layout design", "Booth and elevations", "Surveying", "Quantities and budget"] },
+    cifra: { valor: { es: "7 días", en: "7 days" }, etiqueta: { es: "de conteo vehicular", en: "of traffic counts" } },
+    a: { src: "assets/peaje.webp", encaje: "cover", etq: { es: "TERRENO", en: "SITE" } },
+    b: { src: "assets/peaje-plano.webp", encaje: "contain", etq: { es: "PLANO", en: "DRAWING" } }
+  },
+  {
+    nombre: { es: "Adecuación del área de quirófanos, piso 2 · Hospital Clínica de los Trabajadores de Guayana", en: "Operating rooms upgrade, 2nd floor · Guayana Workers' Hospital" },
+    ubicacion: { es: "Puerto Ordaz, Bolívar", en: "Puerto Ordaz, Bolívar" },
+    anio: "2024",
+    detalle: { es: "Presupuesto de obra completo, con su análisis de precios unitarios partida por partida: materiales, equipos y mano de obra. Incluye demoliciones, paredes, pisos hospitalarios, puertas, sanitarios y ascensor.", en: "Full construction budget with a unit price analysis for every line item: materials, equipment and labor. Covers demolition, walls, hospital flooring, doors, plumbing fixtures and elevator." },
+    rol: { es: "Presupuesto y APU", en: "Budget and unit prices" },
+    destacar: true,
+    servicios: { es: ["Cómputos métricos", "APU por partida", "Presupuesto de obra"], en: ["Quantity take-off", "Unit price per item", "Construction budget"] },
+    cifra: { valor: "267", etiqueta: { es: "partidas con APU", en: "line items priced" } },
+    a: { src: "assets/hospital-presupuesto.webp", encaje: "contain", etq: { es: "PRESUPUESTO", en: "BUDGET" } },
+    b: { src: "assets/hospital-apu.webp", encaje: "contain", etq: { es: "APU", en: "UNIT PRICE" } }
+  },
+  {
+    nombre: { es: "Vivienda unifamiliar A-168", en: "Single-family house A-168" },
+    ubicacion: null,             // REEMPLAZAR: ciudad o urbanización, si OCAS y el dueño lo permiten
+    anio: "2026",
+    detalle: { es: "Residencia de obra: control de avance, libro de obra y reporte diario, materiales, mediciones y valuaciones semanales.", en: "Site management: progress control, site log and daily report, materials, measurements and weekly progress payments." },
+    rol: { es: "Ingeniero de obra", en: "Site engineer" },
+    servicios: { es: ["Residencia de obra", "Libro y reporte diario", "Valuaciones"], en: ["Site management", "Site log and daily report", "Progress payments"] },
+    cifra: { valor: { es: "3 niveles", en: "3 levels" }, etiqueta: { es: "+ techo", en: "+ roof" } },
+    credito: { es: "Construcción: Casas OCAS", en: "Builder: Casas OCAS" },
+    a: { src: "assets/a168.webp", encaje: "cover", etq: { es: "OBRA", en: "BUILT" } },
+    b: { src: null, etq: { es: "BOCETO", en: "SKETCH" } },
+    // fotos de "Ver más": cada una con su versión mini (-m.webp)
+    galeria: [
+      { grupo: { es: "Fachada trasera", en: "Rear elevation" }, fotos: ["assets/a168/trasera.webp"] },
+      { grupo: { es: "Baños terminados", en: "Finished bathrooms" }, fotos: ["assets/a168/bano-1.webp", "assets/a168/bano-2.webp", "assets/a168/bano-3.webp", "assets/a168/bano-5.webp"] }
+    ]
+  }
+];
+
+/* ===================== Textos en inglés ===================== */
+const EN = {
+  "skip":"Skip to content","nav.serv":"Services","nav.obras":"Projects","nav.proc":"Process","nav.sobre":"About","nav.cont":"Contact","sonido":"Pencil",
+  "lam1":"of 07 · Home","titulo":"Civil Engineer","hero.sub":"From blueprint to building. I design, calculate and build.",
+  "hero.zona":"Based in","cta.dis":"Design my project","cta.obra":"Build my project","hero.bajar":"Scroll and watch the building being drawn",
+  "caj.prof":"Professional","caj.reg":"License","caj.esc":"Scale","caj.proy":"Project","caj.proyv":"Professional portfolio","caj.lam":"Sheet","caj.fecha":"Date",
+  "lam2":"of 07 · Services","serv.h":"Every construction phase, a service",
+  "serv.lead":"Scroll slowly: the sketch is drawn phase by phase. For each one I tell you what I do, at the design desk or on site.",
+  "etq.dis":"Design","etq.obr":"On site","etq.amb":"Design + site",
+  "f1.n":"Phase 01 · Site study & foundations","f1.h":"Preliminary studies and foundations","f1.s":"Preliminary studies · Surveying · Foundation design",
+  "f1.p":"Understand the ground before digging. I coordinate preliminary studies and topographic surveys, and design foundations for the actual soil and loads of the project.",
+  "f1.c1":"Site visit and study","f1.c2":"Topographic survey","f1.c3":"Footings and grade beams",
+  "f2.n":"Phase 02 · Structure","f2.h":"Structural analysis and design","f2.s":"Reinforced concrete · Steel · Calculation reports",
+  "f2.p":"Columns, beams and slabs that work as they should. I model, calculate and detail reinforced concrete and steel structures, with a clear calculation report you can check step by step.",
+  "f2.c1":"Model and analysis","f2.c2":"Rebar detailing","f2.c3":"Calculation report",
+  "f3.n":"Phase 03 · Slabs & walls","f3.h":"Drawings and BIM modeling",
+  "f3.p":"Construction-ready architectural and engineering drawings, and BIM models that coordinate disciplines before mistakes reach the site.",
+  "f3.c1":"Architectural drawings","f3.c2":"Structural drawings","f3.c3":"BIM model",
+  "f4.n":"Phase 04 · MEP","f4.h":"Quantities, budgets and schedules","f4.s":"Quantity take-off · Unit price analysis · Budget · Schedule",
+  "f4.p":"Every meter and every bag counts. I prepare quantity take-offs, unit price analyses, budgets and schedules so you decide with numbers, not guesses.",
+  "f4.c1":"Quantity take-off","f4.c2":"Unit price analysis","f4.c3":"Construction schedule",
+  "f5.n":"Phase 05 · Finishes","f5.h":"Construction management and supervision","f5.s":"Management · Supervision & inspection · Turnkey",
+  "f5.p":"On site, every day. I manage, supervise and inspect the work, keep the site log and the daily report, and deliver turnkey projects.",
+  "f5.c1":"Site log and daily report","f5.c2":"Progress and materials control","f5.c3":"Measurements and progress payments",
+  "lam3":"of 07 · Projects","obras.h":"Finished building","obras.lead":"The sketch now has color: this is how a project ends, built and delivered. Below are real projects I have worked on.",
+  "obras.h2":"Projects","obras.lead2":"Drag the yellow pencil on each image to go from the built work to its drawing or sketch.",
+  "lam4":"of 07 · How I work","proc.h":"Work schedule","proc.lead":"Four steps, like a construction schedule. Durations change with every project: this is just a reference.",
+  "proc.act":"Activity","p1.h":"1 · Consultation","p1.p":"You tell me what you need. I review whatever you have: drawings, photos, the site.",
+  "p2.h":"2 · Proposal and budget","p2.p":"Scope, deliverables, timeline and price in writing, before we start.",
+  "p3.h":"3 · Execution","p3.p":"Calculations, drawings or construction, with progress you can review at each stage.",
+  "p4.h":"4 · Delivery","p4.p":"Final deliverables, a review with you and an orderly close-out.",
+  "proc.nota":"◇ = approval milestone. Illustrative duration, not a committed timeline.",
+  "r1.h":"On site or by video call","r1.p":"Kick-off, reviews and delivery in short meetings, with an agenda and minutes.",
+  "r2.h":"Digital deliverables","r2.p":"Drawings, reports, quantities and budgets in formats your team can open.",
+  "r3.h":"Agreed review rounds","r3.p":"Review rounds are set in the proposal, so there are no surprises.",
+  "lam5":"of 07 · About","sobre.h":"The engineer behind the sketch",
+  "sobre.p1":"Civil engineer from IUP Santiago Mariño (Venezuela, 2020), registered with the Venezuelan College of Engineers. Experienced in site management, cost estimating, contract administration and technical documentation.",
+  "sobre.p2":"I bring engineering and technology together: I founded MiLibroDeObra, a web app to keep the daily site log from a phone, and I use artificial intelligence in my processes, always with human review.",
+  "d.reg":"Professional license","d.exp":"Experience","d.esp":"Specialty","d.idi":"Languages","d.zona":"Time zone","d.disp":"Availability",
+  "lam4m":"of 07 · MiLibroDeObra","hero.mldo":"Founder of MiLibroDeObra",
+  "mldo.h":"My project: MiLibroDeObra","mldo.lema":"Your site's daily notebook, on the web.",
+  "mldo.p":"I founded MiLibroDeObra to solve something I live on every job: the daily report that ends up being written several times. I use it every day on my own site as site engineer.",
+  "mldo.s1h":"Open the day","mldo.s1p":"Crew and teams, planned tasks and weather. You can bring in yesterday's entry and edit what changed.",
+  "mldo.s2h":"Close the day","mldo.s2p":"Work done, materials used, notes and photos.",
+  "mldo.s3h":"Share it","mldo.s3p":"From that same entry you prepare the WhatsApp message, the web report and the site log.",
+  "mldo.origen":"It grew out of my 2020 engineering thesis on site logs and contract files.",
+  "mldo.cta1":"Start free","mldo.cta2":"Visit MiLibroDeObra",
+  "tel.t":"Daily report · Sample site","tel.f":"Monday · sunny","tel.p":"Crew: 8 in 2 teams","tel.a1":"✓ Level 1 slab pour, axes A–B",
+  "tel.a2":"✓ Plaster on the north facade","tel.m":"Materials: 40 bags of cement","tel.fo":"6 photos · see web report","tel.nota":"Fictional sample of the prepared message",
+  "lam6":"of 07 · Contact","cont.h":"Work order","cont.lead":"Tell me about your project. I will reply with specific questions or a proposal.",
+  "ot.sello":"to review","ot.t":"Work order","ot.nombre":"Name","ot.correo":"Email","ot.tipo":"What do you need?",
+  "ot.ubic":"Project location","ot.pres":"Estimated budget","ot.pres0":"Not sure yet","ot.msg":"Message",
+  "ot.env1":"Send by email","ot.env2":"Send by WhatsApp","ot.aviso":"This site does not store your data: the message opens ready in your email or WhatsApp so you send it yourself.",
+  "cont.mail":"Email","cont.cv":"Download CV (PDF)","foot":"From blueprint to building."
+};
+const UI = {
+  es:{ ph:{especialidad:"Especialidad",anos:"X años",registro:"Registro profesional",disponibilidad:"Disponibilidad",nombre:"Nombre",ciudad:"Ciudad"},
+       obra:{nombre:"Nombre de la obra",ubicacion:"Ubicación",anio:"Año",rol:"Rol",cifra:"Cifra clave"},
+       foto:"Tu foto", comparar:"Comparar las dos imágenes", pista:"arrastra el lápiz",
+       verMas:"Ver más fotos", cerrar:"Cerrar", ant:"Foto anterior", sig:"Foto siguiente", ayudaVisor:"Esc o toca fuera para cerrar", ayudaVisorM:"Toca fuera o desliza hacia abajo para cerrar",
+       faltaCorreo:"Falta configurar el correo en PERFIL.correo.", faltaWa:"Falta configurar el WhatsApp en PERFIL.whatsapp.",
+       faltaIn:"Falta configurar el enlace de LinkedIn en PERFIL.linkedin.", faltaCv:"Falta subir el CV en PDF y ponerlo en PERFIL.cv.",
+       requerido:"Completa nombre, un correo válido y el mensaje.",
+       fases:["Fase 00 · Planta","Fase 01 · Cimentación","Fase 02 · Estructura","Fase 03 · Losas y muros","Fase 04 · Instalaciones","Fase 05 · Acabados"],
+       notas:["esc. 1:100","zapatas 1.60 × 1.60","columnas 40 × 40","losa e = 0.20 m","agua y electricidad","¡listo!"],
+       asunto:"Orden de trabajo", tipoD:"Diseñar mi obra", tipoO:"Construir mi obra", lbl:{n:"Nombre",c:"Correo",t:"Necesito",u:"Ubicación",p:"Presupuesto",m:"Mensaje"}, nd:"No indicado",
+       sv:{planta:"PLANTA TIPO",esc:"ESC. 1:100 · COTAS EN m",sala:"SALA",coc:"COCINA",h1:"HAB. 1",h2:"HAB. 2",zap:"zapata 1.60×1.60",col:"col. 40×40",losa:"losa e=0.20",agua:"agua",elec:"electricidad",listo:"¡listo! — L.C.",norte:"N",fachada:"fachada · boceto"} },
+  en:{ ph:{especialidad:"Specialty",anos:"X years",registro:"License no.",disponibilidad:"Availability",nombre:"Name",ciudad:"City"},
+       obra:{nombre:"Project name",ubicacion:"Location",anio:"Year",rol:"Role",cifra:"Key figure"},
+       foto:"Your photo", comparar:"Compare both images", pista:"drag the pencil",
+       verMas:"See more photos", cerrar:"Close", ant:"Previous photo", sig:"Next photo", ayudaVisor:"Esc or tap outside to close", ayudaVisorM:"Tap outside or swipe down to close",
+       faltaCorreo:"Email not set yet (PERFIL.correo).", faltaWa:"WhatsApp not set yet (PERFIL.whatsapp).",
+       faltaIn:"LinkedIn link not set yet (PERFIL.linkedin).", faltaCv:"CV PDF not uploaded yet (PERFIL.cv).",
+       requerido:"Please fill in your name, a valid email and the message.",
+       fases:["Phase 00 · Plan","Phase 01 · Foundations","Phase 02 · Structure","Phase 03 · Slabs & walls","Phase 04 · MEP","Phase 05 · Finishes"],
+       notas:["scale 1:100","footings 1.60 × 1.60","columns 40 × 40","slab t = 0.20 m","water and power","done!"],
+       asunto:"Work order", tipoD:"Design my project", tipoO:"Build my project", lbl:{n:"Name",c:"Email",t:"I need",u:"Location",p:"Budget",m:"Message"}, nd:"Not given",
+       sv:{planta:"TYPICAL FLOOR",esc:"SCALE 1:100 · METERS",sala:"LIVING",coc:"KITCHEN",h1:"BED 1",h2:"BED 2",zap:"footing 1.60×1.60",col:"col. 40×40",losa:"slab t=0.20",agua:"water",elec:"power",listo:"done! — L.C.",norte:"N",fachada:"elevation · sketch"} }
+};
+
+(function(){
+  const $ = (s, r=document) => r.querySelector(s);
+  const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+  const html = document.documentElement;
+  const RM = html.classList.contains('rm');
+  let LANG = 'es';
+  try { if (localStorage.getItem('lang') === 'en') LANG = 'en'; } catch(e){}
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const tr = v => v == null ? v : (typeof v === 'object' ? (v[LANG] || v.es) : v);
+  const ph = label => `<span class="ph">[${esc(label)}]</span>`;
+  const val = (v, label) => (v == null || v === '') ? ph(label) : esc(tr(v));
+  const cl = v => Math.max(0, Math.min(1, v));
+  const seg = (p, a, b) => cl((p - a) / (b - a));
+
+  /* ---------- Trazos a mano con rough.js ---------- */
+  const INK = '#1B2A47';
+  const RG = window.rough ? rough.generator() : null;
+  let semilla = 1;
+  function trazo(drawable){
+    return RG.toPaths(drawable).map(p => {
+      const solido = p.fill && p.fill !== 'none';
+      return `<path d="${p.d}" stroke="${solido ? 'none' : p.stroke}" stroke-width="${p.strokeWidth}" fill="${solido ? p.fill : 'none'}" stroke-linecap="round"${solido ? ' class="solido"' : ' pathLength="1"'}/>`;
+    }).join('');
+  }
+  const op = x => Object.assign({ stroke: INK, strokeWidth: 1.15, roughness: 1.15, bowing: 1.1, seed: semilla++ }, x || {});
+  const linea = (x1,y1,x2,y2,x) => trazo(RG.line(x1,y1,x2,y2,op(x)));
+  const poli = (pts,x) => trazo(RG.polygon(pts,op(x)));
+  const circ = (cx,cy,d,x) => trazo(RG.circle(cx,cy,d,op(x)));
+  const rect = (x0,y0,w,h,x) => trazo(RG.rectangle(x0,y0,w,h,op(x)));
+  // línea de eje (trazo y punto) hecha con tramos a mano
+  function eje(x1,y1,x2,y2,tr=14,hueco=5,x){
+    const L = Math.hypot(x2-x1, y2-y1), ux = (x2-x1)/L, uy = (y2-y1)/L;
+    const pat = [tr, hueco, Math.max(1.5, tr*.15), hueco];
+    let d = 0, i = 0, o = '';
+    while (d < L) {
+      const n = Math.min(pat[i % 4], L - d);
+      if (i % 2 === 0) o += linea(x1+ux*d, y1+uy*d, x1+ux*(d+n), y1+uy*(d+n), Object.assign({strokeWidth:.8, roughness:.35, bowing:.3}, x || {}));
+      d += n; i++;
+    }
+    return o;
+  }
+
+  /* ---------- Planta del inicio (se dibuja al cargar) ---------- */
+  function heroPlano(){
+    const sv = UI[LANG].sv; semilla = 11;
+    let o = '';
+    const g = (h, d) => `<g class="hp" style="--d:${d.toFixed(2)}">${h}</g>`;
+    const X = [275,425,575,725], Y = [190,340,490,640];
+    X.forEach((x,i) => { o += g(eje(x,118,x,700,22,7), .05*i); });
+    Y.forEach((y,i) => { o += g(eje(198,y,800,y,22,7), .2+.05*i); });
+    'ABCD'.split('').forEach((c,i) => { o += g(circ(X[i],92,36,{strokeWidth:1})+`<text class="nota" x="${X[i]}" y="100" font-size="22" text-anchor="middle">${c}</text>`, .35+.05*i); });
+    [1,2,3,4].forEach((c,i) => { o += g(circ(168,Y[i],36,{strokeWidth:1})+`<text class="nota" x="168" y="${Y[i]+8}" font-size="22" text-anchor="middle">${c}</text>`, .45+.05*i); });
+    o += g(poli([[265,180],[735,180],[735,650],[265,650]],{strokeWidth:2.4,roughness:1.3}), .6);
+    o += g(poli([[281,196],[719,196],[719,634],[281,634]],{strokeWidth:1.3}), .8);
+    o += g(linea(425,196,425,300)+linea(425,360,425,490)+linea(425,490,500,490)+linea(545,490,719,490)+linea(575,196,575,420)+linea(281,490,380,490), 1.0);
+    o += g(trazo(RG.arc(425,360,120,120,-Math.PI/2,0,false,op({strokeWidth:.9})))+linea(425,300,485,360,{strokeWidth:.7}), 1.3);
+    o += g(trazo(RG.arc(500,490,90,90,0,Math.PI/2,false,op({strokeWidth:.9}))), 1.35);
+    o += g(rect(600,520,100,110,{fill:INK,fillStyle:'hachure',hachureGap:18,hachureAngle:0,fillWeight:.8,strokeWidth:1}), 1.4);
+    o += g(linea(650,520,650,630,{strokeWidth:.8})+linea(650,625,640,610,{strokeWidth:.8})+linea(650,625,660,610,{strokeWidth:.8}), 1.6);
+    [[320,380],[470,530],[620,680]].forEach(([a,b],i) => { o += g(linea(a,180,a,196)+linea(b,180,b,196)+linea(a,188,b,188,{strokeWidth:.8}), 1.2+.05*i); });
+    o += g(linea(727,230,727,300,{strokeWidth:.8})+linea(727,380,727,450,{strokeWidth:.8})+linea(273,250,273,320,{strokeWidth:.8}), 1.35);
+    let k = 0;
+    X.forEach(x => Y.forEach(y => { o += g(rect(x-8,y-8,16,16,{fill:INK,fillStyle:'solid',strokeWidth:1,roughness:.8}), 1.6 + (k++ % 5) * .06); }));
+    o += g(linea(275,150,725,150,{strokeWidth:.9})+X.map(x => linea(x-7,157,x+7,143,{strokeWidth:1.1})+linea(x,140,x,160,{strokeWidth:.7})).join(''), 1.8);
+    o += g(linea(795,190,795,640,{strokeWidth:.9})+Y.map(y => linea(788,y+7,802,y-7,{strokeWidth:1.1})+linea(785,y,805,y,{strokeWidth:.7})).join(''), 1.9);
+    o += g([0,1,2].map(i => `<text class="nota" x="${350+150*i}" y="138" font-size="20" text-anchor="middle">4.00</text><text class="nota" font-size="20" text-anchor="middle" transform="translate(824 ${265+150*i}) rotate(-90)">4.00</text>`).join(''), 2.0);
+    o += g(`<text class="nota" x="350" y="420" font-size="19" text-anchor="middle">${sv.sala}</text><text class="nota" x="500" y="270" font-size="19" text-anchor="middle">${sv.coc}</text><text class="nota" x="650" y="310" font-size="19" text-anchor="middle">${sv.h1}</text><text class="nota" x="350" y="575" font-size="19" text-anchor="middle">${sv.h2}</text>`, 2.1);
+    o += g(`<text class="nota" x="275" y="725" font-size="26">${sv.planta}</text>` + linea(272,735,500,734,{strokeWidth:2}) + linea(272,742,500,742,{strokeWidth:.8}) + `<text class="nota" x="275" y="764" font-size="16" fill-opacity=".7">${sv.esc}</text>`, 2.2);
+    o += g(circ(900,680,62,{strokeWidth:1}) + poli([[900,642],[912,690],[900,682],[888,690]],{fill:INK,fillStyle:'solid',strokeWidth:1}) + `<text class="nota" x="900" y="636" font-size="18" text-anchor="middle">${sv.norte}</text>`, 2.3);
+    $('#heroPlano').innerHTML = o;
+  }
+
+  /* ---------- Edificio en boceto, se dibuja con el scroll ---------- */
+  function edificio(pre){
+    const sv = UI[LANG].sv; semilla = 101;
+    const s = 13, I = (x,y,z) => [(x - z) * .866 * s, (x + z) * .5 * s - y * s];
+    const P = pts => pts.map(p => I(...p));
+    const W = 12, H = 3, F = 3, N = [0,4,8,12];
+    const g = (k,a,b,h,cls='it') => `<g class="${cls}" data-k="${k}" data-a="${a}" data-b="${b}">${h}</g>`;
+    const T = (x,y,z,t,sz=13,col=INK,anchor='start') => { const [a,b] = I(x,y,z); return `<text class="nota" x="${a.toFixed(1)}" y="${b.toFixed(1)}" font-size="${sz}" fill="${col}" text-anchor="${anchor}">${t}</text>`; };
+    const lav = (pts, col) => `<polygon points="${P(pts).join(' ')}" fill="${col}" filter="url(#${pre}acu)" class="solido"/>`;
+    let o = `<defs>
+      <filter id="${pre}acu" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="10"/><feGaussianBlur stdDeviation=".7"/></filter>
+      <linearGradient id="${pre}cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB7DE"/><stop offset=".55" stop-color="#E9B7B0"/><stop offset="1" stop-color="#F7D28E"/></linearGradient></defs>`;
+    // acuarela: cielo y terreno
+    o += g('p5', 0, .45, `<rect x="-215" y="-178" width="430" height="300" rx="30" fill="url(#${pre}cielo)" filter="url(#${pre}acu)" class="solido"/>`, 'it lav');
+    o += g('p5', .1, .55, lav([[-7,0,-5],[19,0,-5],[19,0,19],[-7,0,19]], '#A9C58A'), 'it lav');
+    // fase 0: planta en el suelo
+    N.forEach((k,i) => { o += g('p0', i*.08, .35 + i*.08, eje(...I(k,0,-3.5), ...I(k,0,15.5), 9, 3.5, {strokeWidth:.7}) + eje(...I(-3.5,0,k), ...I(15.5,0,k), 9, 3.5, {strokeWidth:.7})); });
+    'ABCD'.split('').forEach((c,i) => { const [x,y] = I(N[i],0,-4.6); o += g('p0', .35 + i*.05, .6 + i*.05, circ(x,y,16,{strokeWidth:.9}) + `<text class="nota" x="${x}" y="${y+4.5}" font-size="12" text-anchor="middle">${c}</text>`); });
+    [1,2,3,4].forEach((c,i) => { const [x,y] = I(-4.6,0,N[i]); o += g('p0', .4 + i*.05, .65 + i*.05, circ(x,y,16,{strokeWidth:.9}) + `<text class="nota" x="${x}" y="${y+4.5}" font-size="12" text-anchor="middle">${c}</text>`); });
+    o += g('p0', .55, 1, poli(P([[-.4,0,-.4],[12.4,0,-.4],[12.4,0,12.4],[-.4,0,12.4]]), {strokeWidth:1.6}));
+    // sombra en acuarela
+    o += g('p5', .3, .7, lav([[0,0,0],[0,0,12],[-6,0,15],[-6,0,3]], '#9AA2B8'), 'it lav');
+    // fase 1: zapatas y riostras
+    const caja = (x0,y0,z0,x1,y1,z1) =>
+      poli(P([[x0,y1,z0],[x1,y1,z0],[x1,y1,z1],[x0,y1,z1]]),{strokeWidth:1}) +
+      poli(P([[x1,y0,z0],[x1,y1,z0],[x1,y1,z1],[x1,y0,z1]]),{strokeWidth:1,fill:INK,fillStyle:'hachure',hachureGap:3.2,fillWeight:.5,hachureAngle:70}) +
+      poli(P([[x0,y0,z1],[x1,y0,z1],[x1,y1,z1],[x0,y1,z1]]),{strokeWidth:1,fill:INK,fillStyle:'hachure',hachureGap:4.5,fillWeight:.45,hachureAngle:-20});
+    let i = 0;
+    N.forEach(z => N.forEach(x => { const a = (i++/16)*.55; o += g('p1', a, a+.25, caja(x-.8,0,z-.8,x+.8,.6,z+.8)); }));
+    N.forEach((z,zi) => N.forEach(x => {
+      if (x < 12) o += g('p1', .55 + zi*.06, .8 + zi*.05, linea(...I(x+.8,.35,z), ...I(x+3.2,.35,z), {strokeWidth:1.6}));
+      if (z < 12) o += g('p1', .58 + zi*.06, .83 + zi*.05, linea(...I(x,.35,z+.8), ...I(x,.35,z+3.2), {strokeWidth:1.6}));
+    }));
+    o += g('p1', .82, 1, linea(...I(12.8,.3,12.8), ...I(15,1.8,16.5),{strokeWidth:.8}) + T(15,2.1,16.5,sv.zap,12,INK,'middle'));
+    // fase 2: estructura
+    i = 0;
+    for (let f = 0; f < F; f++) {
+      N.forEach(z => N.forEach(x => { const a = f*.3 + (i++ % 16)*.008; o += g('p2', a, a+.17, linea(...I(x,f*H,z), ...I(x,(f+1)*H,z), {strokeWidth:1.3})); }));
+      N.forEach(k => { o += g('p2', f*.3 + .12, f*.3 + .3, linea(...I(0,(f+1)*H,k), ...I(W,(f+1)*H,k), {strokeWidth:1.1}) + linea(...I(k,(f+1)*H,0), ...I(k,(f+1)*H,W), {strokeWidth:1.1})); });
+    }
+    o += g('p2', .9, 1, linea(...I(12,4.5,12), ...I(14.8,6.5,14),{strokeWidth:.8}) + T(14.8,6.8,14,sv.col,12,INK,'middle'));
+    // fase 3: losas y muros sombreados a lápiz, con vanos
+    const ventanas = (cara, fn) => { let r = ''; for (let f = 0; f < F; f++) for (let b = 0; b < 3; b++) {
+      const u0 = b*4+1, u1 = b*4+3, v0 = f*H+.9, v1 = f*H+2.3;
+      const pts = cara === 'x' ? [[W,v0,u0],[W,v0,u1],[W,v1,u1],[W,v1,u0]] : [[u0,v0,W],[u1,v0,W],[u1,v1,W],[u0,v1,W]];
+      r += fn(pts, f, b); } return r; };
+    const papel = pts => `<polygon points="${P(pts).join(' ')}" fill="#FBF8F1" class="solido"/>`;
+    o += g('p3', 0, .3, papel([[W,0,0],[W,F*H,0],[W,F*H,W],[W,0,W]]) + papel([[0,0,W],[W,0,W],[W,F*H,W],[0,F*H,W]]) + papel([[0,F*H,0],[W,F*H,0],[W,F*H,W],[0,F*H,W]]), 'it xp');
+    o += g('p3', 0, .38, poli(P([[W,0,0],[W,F*H,0],[W,F*H,W],[W,0,W]]),{strokeWidth:1.4,fill:INK,fillStyle:'hachure',hachureGap:7,fillWeight:.4,hachureAngle:60}), 'it xr');
+    o += g('p3', .2, .58, poli(P([[0,0,W],[W,0,W],[W,F*H,W],[0,F*H,W]]),{strokeWidth:1.4,fill:INK,fillStyle:'cross-hatch',hachureGap:6.5,fillWeight:.4,hachureAngle:-30}), 'it xr');
+    o += g('p3', .45, .65, poli(P([[0,F*H,0],[W,F*H,0],[W,F*H,W],[0,F*H,W]]),{strokeWidth:1.4}), 'it xr');
+    for (let f = 1; f < F; f++) o += g('p3', .5 + f*.05, .7 + f*.05, linea(...I(W,f*H,0),...I(W,f*H,W),{strokeWidth:1.8}) + linea(...I(0,f*H,W),...I(W,f*H,W),{strokeWidth:1.8}), 'it xr');
+    const vano = pts => poli(P(pts),{fill:'#FBF8F1',fillStyle:'solid',strokeWidth:1.1});
+    o += g('p3', .62, 1, ventanas('x', vano) + ventanas('z', vano), 'it xr');
+    o += g('p3', .85, 1, linea(...I(6,9,0), ...I(4,12,-2.5),{strokeWidth:.8}) + T(4,12.3,-2.5,sv.losa,12,INK,'middle'));
+    // acuarela de acabados
+    o += g('p5', .25, .65, lav([[W,0,0],[W,F*H,0],[W,F*H,W],[W,0,W]], '#EFD9B4') + lav([[0,0,W],[W,0,W],[W,F*H,W],[0,F*H,W]], '#D9B98C') + lav([[0,F*H,0],[W,F*H,0],[W,F*H,W],[0,F*H,W]], '#C9C3B8'), 'it lav');
+    o += g('p5', .45, .85, ventanas('x', (pts,f,b) => lav(pts, (f+b)%2 ? '#F6C863' : '#8EB4E3')) + ventanas('z', (pts,f,b) => lav(pts, (f+b+1)%2 ? '#F6C863' : '#8EB4E3')), 'it lav');
+    // fase 4: instalaciones con lápiz de color
+    const tubo = (pts,col) => trazo(RG.linearPath(P(pts), op({stroke:col,strokeWidth:1.9,roughness:1.5})));
+    let agua = tubo([[1.5,0,1.5],[1.5,F*H,1.5]],'#2F6FD6'), elec = tubo([[10.5,0,1.5],[10.5,F*H,1.5]],'#C8372D');
+    for (let f = 0; f < F; f++) { const y = f*H + 2.4;
+      agua += tubo([[1.5,y,1.5],[9,y,1.5],[9,y,10]],'#2F6FD6');
+      elec += tubo([[10.5,y+.3,1.5],[10.5,y+.3,10.5],[3,y+.3,10.5]],'#C8372D'); }
+    o += g('p4', 0, .75, agua, 'it tub');
+    o += g('p4', .15, .9, elec, 'it tub');
+    o += g('p4', .75, 1, T(1.5,F*H+1.2,1.5,sv.agua,13,'#2F6FD6','middle') + T(10.5,F*H+1.2,1.5,sv.elec,13,'#C8372D','middle'), 'it tub');
+    // árboles y firma
+    [[15,3],[16,9],[3,15.5],[9,16],[-2.5,14]].forEach(([x,z],j) => {
+      const [tx,ty] = I(x,0,z), [cx,cy] = I(x,2.7,z), r = 24 + (j%2)*7;
+      o += g('p5', .5 + j*.06, .8 + j*.04, linea(tx,ty,cx,cy+6,{strokeWidth:1.6}) + circ(cx,cy,r,{strokeWidth:1,fill:'#5E8C35',fillStyle:'hachure',hachureGap:3,fillWeight:.7,roughness:2}));
+    });
+    o += g('p5', .82, 1, `<text class="nota" x="150" y="215" font-size="17" text-anchor="middle" transform="rotate(-6 150 215)">${sv.listo}</text>`);
+    return o;
+  }
+
+  const boceto = $('#boceto'), bocetoFinal = $('#bocetoFinal');
+  let grupos = [], xrs = [], xps = [], tubs = [];
+  function pintarBocetos(){
+    if (!RG) return;
+    heroPlano();
+    boceto.innerHTML = edificio('a');
+    bocetoFinal.innerHTML = edificio('b');
+    $$('[data-k]', bocetoFinal).forEach(gr => { gr.style.setProperty('--o', 0); gr.style.setProperty('--v', 1); });
+    $$('.tub', bocetoFinal).forEach(gr => gr.style.opacity = 0);
+    $$('.xr', bocetoFinal).forEach(gr => gr.style.opacity = .45);
+    grupos = $$('[data-k]', boceto).map(el => ({ el, k: el.dataset.k, a: +el.dataset.a, b: +el.dataset.b, v: -1 }));
+    xrs = $$('.xr', boceto); xps = $$('.xp', boceto); tubs = $$('.tub', boceto);
+  }
+
+  /* ---------- Perfil ---------- */
+  function pintarPerfil(){
+    const t = UI[LANG];
+    $$('[data-p]').forEach(el => { const k = el.dataset.p; el.innerHTML = val(PERFIL[k], t.ph[k] || k); });
+    $('#soft').innerHTML = PERFIL.software.map(s => `<span>${esc(s)}</span>`).join('');
+    $('#fotoPerfil .foto').innerHTML = PERFIL.foto
+      ? `<img src="${esc(PERFIL.foto)}" alt="${esc(PERFIL.nombre)}" loading="lazy" width="640" height="800">`
+      : `<span class="ph">[${t.foto} · WebP]</span>`;
+  }
+
+  /* ---------- Obras ---------- */
+  function bocetoCasa(){
+    semilla = 300;
+    const sv = UI[LANG].sv;
+    const hatch = (x,y,w,h,ang,gap,col=INK) => rect(x,y,w,h,{strokeWidth:1.6,fill:col,fillStyle:'hachure',hachureGap:gap,hachureAngle:ang,fillWeight:.6});
+    return `<svg viewBox="0 0 300 375" aria-hidden="true">
+      ${linea(10,330,290,331,{strokeWidth:2})}
+      ${hatch(40,250,220,80,90,14,'#2F6FD6')}
+      ${rect(28,240,244,12,{strokeWidth:1.8})}
+      ${hatch(60,160,200,80,0,9)}
+      ${rect(150,165,70,70,{strokeWidth:1.4,fill:'#F6C863',fillStyle:'hachure',hachureGap:5,fillWeight:.8})}
+      ${rect(48,150,232,12,{strokeWidth:1.8})}
+      ${hatch(80,80,150,70,0,9)}
+      ${hatch(100,88,40,56,90,4,'#8a5a2b')}
+      ${rect(70,70,170,10,{strokeWidth:1.8})}
+      ${linea(20,345,280,345,{strokeWidth:.8})}${linea(20,339,20,351,{strokeWidth:.8})}${linea(280,339,280,351,{strokeWidth:.8})}
+      <text class="nota" x="292" y="294" font-size="13" text-anchor="end">N+0</text>
+      <text class="nota" x="292" y="204" font-size="13" text-anchor="end">N+1</text>
+      <text class="nota" x="292" y="120" font-size="13" text-anchor="end">N+2</text>
+      <text class="nota" x="150" y="366" font-size="14" text-anchor="middle">${sv.fachada}</text>
+    </svg>`;
+  }
+  function capa(c, cls){
+    if (!c || !c.src) return `<div class="capa ${cls}">${RG ? bocetoCasa() : ''}</div>`;
+    return `<div class="capa ${cls}"><img class="${c.encaje === 'contain' ? 'plano' : ''}" src="${esc(c.src)}" alt="" loading="lazy" decoding="async"></div>`;
+  }
+  function pintarObras(){
+    const t = UI[LANG], o = t.obra;
+    $('#galeria').innerHTML = OBRAS.map(ob => {
+      const cifra = ob.cifra ? `<b>${esc(tr(ob.cifra.valor))}</b><small>${esc(tr(ob.cifra.etiqueta) || '')}</small>` : `<b>${ph(o.cifra)}</b>`;
+      return `<article class="obra reveal">
+        <div class="ab">
+          ${capa(ob.a, 'a')}${capa(ob.b, 'b')}
+          <span class="linea"></span>
+          <span class="rot l">${esc(tr(ob.a.etq))}</span><span class="rot r">${esc(tr(ob.b.etq))}</span>
+          <span class="pista" aria-hidden="true"><i>←</i> ${t.pista} <i>→</i></span>
+          <input type="range" min="0" max="100" value="50" aria-label="${t.comparar}: ${esc(tr(ob.nombre) || '')}">
+        </div>
+        <div class="obra-info">
+          <h3>${val(ob.nombre, o.nombre)}</h3>
+          <div class="obra-meta"><span>⌖ ${val(ob.ubicacion, o.ubicacion)}</span><span>${val(ob.anio, o.anio)}</span></div>
+          ${ob.detalle ? `<p class="obra-det">${esc(tr(ob.detalle))}</p>` : ''}
+          ${ob.servicios ? `<ul class="obra-serv">${tr(ob.servicios).map(s => `<li>${esc(s)}</li>`).join('')}</ul>` : ''}
+          <div class="obra-pie"><span class="obra-rol${ob.destacar ? ' resalta' : ''}">${val(ob.rol, o.rol)}</span><div class="obra-cifra">${cifra}</div></div>
+          ${ob.credito ? `<div class="credito">${esc(tr(ob.credito))}</div>` : ''}
+          ${ob.galeria ? `<button class="btn btn-2 ver-mas" type="button" data-obra="${OBRAS.indexOf(ob)}">${t.verMas} <span aria-hidden="true">· ${ob.galeria.reduce((n,g) => n + g.fotos.length, 0)}</span></button>` : ''}
+        </div></article>`;
+    }).join('');
+    $$('#galeria .ver-mas').forEach(b => b.addEventListener('click', () => abrirVisor(+b.dataset.obra, 0, b)));
+    const abs = $$('#galeria .ab');
+    abs.forEach(ab => {
+      const r = $('input', ab), set = v => ab.style.setProperty('--x', v + '%');
+      const usar = () => { ab.classList.add('usado'); ab._demo && cancelAnimationFrame(ab._demo); };
+      r.addEventListener('input', () => { usar(); set(r.value); });
+      r.addEventListener('pointerdown', usar);
+      set(r.value);
+    });
+    // barrido de demostración, una vez, cuando la tarjeta entra en pantalla
+    if (!RM && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(ents => ents.forEach(en => {
+        if (!en.isIntersecting) return;
+        io.unobserve(en.target);
+        const ab = en.target, r = $('input', ab), t0 = performance.now() + 350, dur = 1900;
+        const paso = now => {
+          if (ab.classList.contains('usado')) return;
+          const k = Math.max(0, Math.min(1, (now - t0) / dur));
+          const v = 50 + 32 * Math.sin(k * Math.PI * 2) * (1 - k * .2) * (k < 1 ? 1 : 0);
+          r.value = Math.round(v); ab.style.setProperty('--x', v.toFixed(1) + '%');
+          if (k < 1) ab._demo = requestAnimationFrame(paso);
+        };
+        ab._demo = requestAnimationFrame(paso);
+      }), { threshold: .6 });
+      abs.forEach(ab => io.observe(ab));
+    }
+  }
+
+  /* ---------- Visor de fotos ("Ver más") ---------- */
+  const visor = $('#visor');
+  let vLista = [], vI = 0, vOrigen = null;
+  const mini = src => src.replace(/\.webp$/, '-m.webp');
+  function verFoto(i){
+    vI = (i + vLista.length) % vLista.length;
+    const f = vLista[vI], t = UI[LANG];
+    $('#visorImg').src = f.src; $('#visorImg').alt = f.grupo;
+    $('#visorGrupo').textContent = f.grupo;
+    $('#visorCont').textContent = `${vI + 1} / ${vLista.length}`;
+    $$('.v-mini', visor).forEach((b,k) => b.setAttribute('aria-current', k === vI));
+    const act = $$('.v-mini', visor)[vI]; if (act) act.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    const sig = vLista[(vI + 1) % vLista.length]; if (sig) new Image().src = sig.src;   // precarga
+  }
+  function abrirVisor(io, i, origen){
+    const ob = OBRAS[io], t = UI[LANG];
+    vOrigen = origen; vLista = [];
+    let h = '';
+    ob.galeria.forEach(g => {
+      h += `<div class="v-gr"><small>${esc(tr(g.grupo))}</small><div>`;
+      g.fotos.forEach(src => { const k = vLista.length; vLista.push({ src, grupo: tr(g.grupo) }); h += `<button class="v-mini" type="button" data-i="${k}" aria-label="${esc(tr(g.grupo))} ${k+1}"><img src="${esc(mini(src))}" alt="" loading="lazy"></button>`; });
+      h += `</div></div>`;
+    });
+    $('#visorMinis').innerHTML = h;
+    $$('.v-mini', visor).forEach(b => b.addEventListener('click', () => verFoto(+b.dataset.i)));
+    $('#visorTit').textContent = tr(ob.nombre);
+    $('#visorCerrarTxt').textContent = t.cerrar;
+    $('#visorAnt').setAttribute('aria-label', t.ant); $('#visorSig').setAttribute('aria-label', t.sig);
+    $('#visorAyuda').textContent = matchMedia('(hover: none)').matches ? t.ayudaVisorM : t.ayudaVisor;
+    if (visor.showModal) visor.showModal(); else visor.setAttribute('open', '');
+    document.body.style.overflow = 'hidden';
+    verFoto(i);
+    $('#visorCerrar').focus();
+  }
+  function cerrarVisor(){ if (visor.close) visor.close(); else visor.removeAttribute('open'); }
+  visor.addEventListener('close', () => { document.body.style.overflow = ''; if (vOrigen) vOrigen.focus(); });
+  $('#visorCerrar').addEventListener('click', cerrarVisor);
+  $('#visorAnt').addEventListener('click', () => verFoto(vI - 1));
+  $('#visorSig').addEventListener('click', () => verFoto(vI + 1));
+  visor.addEventListener('click', e => { if (e.target === visor) cerrarVisor(); });   // tocar fuera
+  visor.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') verFoto(vI - 1); if (e.key === 'ArrowRight') verFoto(vI + 1); });
+  (function(){ // deslizar en el celular: izquierda/derecha cambia de foto, abajo cierra
+    let x0 = null, y0 = null;
+    const esc_ = $('.v-escena', visor);
+    esc_.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+    esc_.addEventListener('touchend', e => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0; x0 = null;
+      if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) verFoto(vI + (dx < 0 ? 1 : -1));
+      else if (dy > 90) cerrarVisor();
+    });
+  })();
+
+  /* ---------- Contacto ---------- */
+  function avisar(msg){ const m = $('#msgFalta'); m.textContent = msg; m.classList.add('ver'); clearTimeout(avisar.t); avisar.t = setTimeout(() => m.classList.remove('ver'), 6000); }
+  function pintarContacto(){
+    const t = UI[LANG];
+    [['#lnkWa', PERFIL.whatsapp && 'https://wa.me/' + PERFIL.whatsapp, t.faltaWa],
+     ['#lnkIn', PERFIL.linkedin, t.faltaIn],
+     ['#lnkIg', PERFIL.instagram && 'https://www.instagram.com/' + PERFIL.instagram + '/', t.faltaIn],
+     ['#lnkMail', PERFIL.correo && 'mailto:' + PERFIL.correo, t.faltaCorreo],
+     ['#lnkCv', PERFIL.cv, t.faltaCv]].forEach(([sel, href, falta]) => {
+      const a = $(sel);
+      if (href) { a.href = href; a.removeAttribute('aria-disabled'); a.onclick = null; }
+      else { a.href = '#'; a.setAttribute('aria-disabled', 'true'); a.onclick = e => { e.preventDefault(); avisar(falta); }; }
+    });
+    // correo, teléfono e Instagram también como texto (se pueden copiar)
+    $('#datosCont').innerHTML = [PERFIL.correo, PERFIL.telefono, PERFIL.instagram && '@' + PERFIL.instagram].filter(Boolean).map(esc).join(' · ');
+  }
+  const hoy = new Date(), ymd = hoy.toISOString().slice(0,10);
+  $('#otFecha').textContent = ymd; $('#cajFecha').textContent = ymd; $('#anio').textContent = hoy.getFullYear();
+  $('#otNum').textContent = 'OT-' + ymd.replace(/-/g,'') + '-' + (Math.floor(Math.random()*900)+100);
+  $$('[data-tipo]').forEach(b => b.addEventListener('click', () => { const r = $(`#ot input[name=tipo][value=${b.dataset.tipo}]`); if (r) r.checked = true; }));
+  $('#ot').addEventListener('submit', e => {
+    e.preventDefault();
+    const t = UI[LANG], f = e.target, via = (e.submitter && e.submitter.value) || 'correo';
+    const d = Object.fromEntries(new FormData(f));
+    if (!d.nombre.trim() || !d.mensaje.trim() || !d.correo || !f.correo.checkValidity()) return avisar(t.requerido);
+    const L = t.lbl;
+    const txt = `${t.asunto} ${$('#otNum').textContent}\n${L.n}: ${d.nombre}\n${L.c}: ${d.correo}\n${L.t}: ${d.tipo === 'obra' ? t.tipoO : t.tipoD}\n${L.u}: ${d.ubicacion || t.nd}\n${L.p}: ${d.presupuesto || t.nd}\n\n${d.mensaje}`;
+    if (via === 'wa') {
+      if (!PERFIL.whatsapp) return avisar(t.faltaWa);
+      window.open('https://wa.me/' + PERFIL.whatsapp + '?text=' + encodeURIComponent(txt), '_blank', 'noopener');
+    } else {
+      if (!PERFIL.correo) return avisar(t.faltaCorreo);
+      location.href = 'mailto:' + PERFIL.correo + '?subject=' + encodeURIComponent(`${t.asunto} · ${d.nombre}`) + '&body=' + encodeURIComponent(txt);
+    }
+  });
+
+  /* ---------- Cotas que miden los títulos ---------- */
+  function medirCotas(){
+    $$('.tit').forEach(t => { const h = $('h2', t), s = $('.cota span', t); if (h && s) s.textContent = (h.getBoundingClientRect().width / 50).toFixed(2) + ' m'; });
+  }
+  addEventListener('resize', medirCotas);
+
+  /* ---------- Sonido de lápiz (ElevenLabs), apagado por defecto ---------- */
+  const audio = $('#lapiz'), btnSon = $('#sonido');
+  let sonido = false, pausa;
+  audio.volume = .35;
+  btnSon.addEventListener('click', () => {
+    sonido = !sonido; btnSon.setAttribute('aria-pressed', sonido);
+    if (sonido) audio.play().then(() => { pausa = setTimeout(() => audio.pause(), 700); }).catch(() => {});
+    else audio.pause();
+  });
+  function rasgueo(){ if (!sonido) return; if (audio.paused) audio.play().catch(() => {}); clearTimeout(pausa); pausa = setTimeout(() => audio.pause(), 260); }
+
+  /* ---------- Grúa (progreso por láminas) ---------- */
+  const secciones = $$('[data-lam]');
+  const NIV = Array.from({ length: 7 }, (_, i) => Math.round(376 - i * 320 / 6));
+  function pintarGrua(){
+    if (!RG) return;
+    semilla = 500;
+    let g = `<svg viewBox="0 0 78 400">`;
+    g += linea(46,392,46,20,{strokeWidth:1.4}) + linea(58,392,58,20,{strokeWidth:1.4});
+    for (let y = 392; y > 28; y -= 18) g += linea(46,y,58,y-18,{strokeWidth:.7,roughness:.6});
+    g += linea(4,20,74,20,{strokeWidth:1.5}) + linea(4,12,52,12,{strokeWidth:1.1}) + linea(52,12,74,20,{strokeWidth:1.1}) + linea(52,12,52,2,{strokeWidth:1.1}) + linea(52,2,58,20,{strokeWidth:.9});
+    g += rect(60,21,12,9,{fill:'#F2C14E',fillStyle:'solid',strokeWidth:1});
+    NIV.forEach((y,i) => { g += `<a href="#${secciones[i] ? secciones[i].id : ''}">${linea(37,y,46,y,{strokeWidth:1})}<text class="niv" x="0" y="${y+4}">L0${i+1}</text></a>`; });
+    g += `<path id="cable" d="M20 20V60" stroke="${INK}" stroke-width="1" stroke-dasharray="3 2"/><g id="bloque"><rect x="14" y="-8" width="12" height="8" fill="#F2C14E" stroke="${INK}"/><path d="M20 0v5a3 3 0 1 1-3 3" stroke="${INK}" stroke-width="1.6" fill="none"/></g></svg>`;
+    $('#grua').innerHTML = g;
+  }
+
+  /* ---------- Scroll: avance del boceto ---------- */
+  const B = { p0:0, p1:0, p2:0, p3:0, p4:0, p5:0 };
+  let ultimo = '';
+  function onScroll(){
+    const vh = innerHeight;
+    if (RM) { for (const k in B) B[k] = 1; }
+    else {
+      const intro = $('#servIntro').getBoundingClientRect();
+      B.p0 = cl((vh * .95 - intro.top) / (vh * .6));
+      $$('.fase').forEach(f => { const r = f.getBoundingClientRect(); B['p' + f.dataset.fase] = cl((vh * .85 - r.top) / (vh * .72)); });
+    }
+    const firma = Object.values(B).map(v => v.toFixed(3)).join('|');
+    if (firma !== ultimo && grupos.length) {
+      if (ultimo) rasgueo();
+      ultimo = firma;
+      for (const gr of grupos) {
+        const v = seg(B[gr.k], gr.a, gr.b);
+        if (Math.abs(v - gr.v) < .002) continue;
+        gr.v = v; gr.el.style.setProperty('--o', (1 - v).toFixed(3)); gr.el.style.setProperty('--v', v.toFixed(3));
+      }
+      const xr = B.p4 * (1 - B.p5);   // rayos X durante instalaciones
+      xrs.forEach(e => e.style.opacity = ((1 - .65 * xr) * (1 - .55 * B.p5)).toFixed(3));
+      xps.forEach(e => e.style.opacity = (1 - .7 * xr).toFixed(3));
+      tubs.forEach(e => e.style.opacity = (1 - .85 * B.p5).toFixed(3));
+      let at = 0; for (let k = 1; k <= 5; k++) if (B['p' + k] > .5) at = k;
+      $('#capFase').textContent = UI[LANG].fases[at];
+      $('#capNota').textContent = UI[LANG].notas[at];
+    }
+    const tot = document.documentElement.scrollHeight - vh, p = tot > 0 ? cl(scrollY / tot) : 0;
+    $('#barraMovil').style.transform = `scaleX(${p})`;
+    const cab = $('#cable'), blo = $('#bloque');
+    if (cab) { const yb = 376 - p * 320; cab.setAttribute('d', `M20 20V${yb}`); blo.setAttribute('transform', `translate(0 ${yb})`); }
+    let act = 0; secciones.forEach((s,i) => { if (s.getBoundingClientRect().top < vh * .45) act = i; });
+    $$('#grua .niv').forEach((t,i) => t.classList.toggle('act', i === act));
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', onScroll);
+
+  /* ---------- Idioma ---------- */
+  const ES = {};
+  $$('[data-i18n]').forEach(el => { ES[el.dataset.i18n] = el.innerHTML; });
+  const titulos = { es: document.title, en: 'Leonel Castillo · Civil Engineer | Design, structural analysis, cost estimating and construction' };
+  function aplicarIdioma(){
+    html.lang = LANG;
+    $$('[data-i18n]').forEach(el => { const k = el.dataset.i18n, v = LANG === 'en' ? EN[k] : ES[k]; if (v != null) el.innerHTML = v; });
+    document.title = titulos[LANG];
+    const b = $('#lang'); b.textContent = LANG === 'es' ? 'EN' : 'ES';
+    b.setAttribute('aria-label', LANG === 'es' ? 'Switch to English' : 'Cambiar a español');
+    pintarPerfil(); pintarObras(); pintarContacto(); pintarBocetos(); medirCotas();
+    ultimo = ''; onScroll(); ultimo = ultimo || '';
+    if (window.ScrollTrigger) ScrollTrigger.refresh();
+  }
+  $('#lang').addEventListener('click', () => { LANG = LANG === 'es' ? 'en' : 'es'; try { localStorage.setItem('lang', LANG); } catch(e){} aplicarIdioma(); revelar(); });
+
+  /* ---------- Animaciones GSAP ---------- */
+  function revelar(){
+    if (RM || !window.gsap || !window.ScrollTrigger) return;
+    $$('.reveal').forEach(el => {
+      if (el._rv) return; el._rv = 1;
+      gsap.from(el, { y: 30, opacity: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+    });
+  }
+  function animar(){
+    if (RM || !window.gsap || !window.ScrollTrigger) return;
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.hero-txt > *', { y: 24, opacity: 0, duration: .9, stagger: .1, ease: 'power3.out', delay: .15 });
+    revelar();
+    gsap.from('.g-barra', { scaleX: 0, duration: 1, stagger: .25, ease: 'power2.inOut', scrollTrigger: { trigger: '.gantt', start: 'top 75%', once: true } });
+  }
+
+  pintarGrua();
+  aplicarIdioma();
+  if (document.readyState === 'complete') animar(); else addEventListener('load', animar);
+  if (document.fonts) document.fonts.ready.then(medirCotas);
+})();
+</script>
+</body>
+</html>
